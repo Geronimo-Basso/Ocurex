@@ -2,7 +2,11 @@ package application.model;
 
 import java.time.LocalDate;
 
-
+/**
+ * 
+ * @author GeronimoBasso
+ * @deprecated
+ */
 public class Usuario {
 	private String emailUsuario;
 	private String nombre;

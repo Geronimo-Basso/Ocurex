@@ -1,6 +1,5 @@
 package application.controller;
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextArea;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,14 +8,16 @@ import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.scene.Node;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
 
 public class CIniciarSesion {
 
     @FXML
-    private JFXTextArea usuario;
+    private JFXPasswordField password;
 
     @FXML
-    private JFXTextArea password;
+    private JFXTextField usuario;
 
     @FXML
     private JFXButton btnIniciarSesion;
