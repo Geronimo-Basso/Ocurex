@@ -3,6 +3,7 @@ package application.model;
 import java.time.LocalDate;
 
 public class Seguridad {
+	
 	private String emailUsuario;
 	private String nombre;
 	private String apellido;
@@ -21,6 +22,10 @@ public class Seguridad {
 		this.domicilio = domicilio;
 		this.sexo = sexo;
 		this.fechaEntrada = fechaEntrada;
+	}
+	
+	
+	public Seguridad() {
 	}
 
 	public String getEmailUsuario() {
@@ -78,7 +83,5 @@ public class Seguridad {
 	public void setFechaEntrada(LocalDate fechaEntrada) {
 		this.fechaEntrada = fechaEntrada;
 	}
-	
-	
 	
 }

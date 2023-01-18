@@ -166,7 +166,7 @@
                               <Insets left="350.0" right="50.0" />
                            </GridPane.margin>
                         </JFXTextField>
-                        <JFXTextField fx:id="jfxEspecialidad" promptText="Especialidad" GridPane.rowIndex="2">
+                        <JFXTextField fx:id="jfxDomicilio1" promptText="Especialidad" GridPane.rowIndex="2">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -177,15 +177,12 @@
                               <Insets bottom="20.0" left="350.0" right="50.0" />
                            </GridPane.margin>
                         </JFXTextField>
-                        <ImageView fitHeight="64.0" fitWidth="72.0" GridPane.rowIndex="2">
+                        <ImageView fitHeight="191.0" fitWidth="200.0">
                            <image>
                               <Image url="@../design/heart.png" />
                            </image>
-                           <GridPane.margin>
-                              <Insets left="250.0" />
-                           </GridPane.margin>
                         </ImageView>
-                        <ImageView />
+                        <ImageView fitHeight="191.0" fitWidth="200.0" />
                      </children>
                   </GridPane>
                </center>

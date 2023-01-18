@@ -20,6 +20,9 @@ public class Prisionero{
 		this.edad = edad;
 	}
 
+	public Prisionero() {
+	}
+	
 	public String getIdentificadorPreso() {
 		return identificadorPreso;
 	}

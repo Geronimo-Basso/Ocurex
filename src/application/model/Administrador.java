@@ -25,6 +25,9 @@ public class Administrador {
 		this.sexo = sexo;
 		this.fechaEntrada = fechaEntrada;
 	}
+	
+	public Administrador() {
+	}
 
 	public String getClaveAcceso() {
 		return claveAcceso;

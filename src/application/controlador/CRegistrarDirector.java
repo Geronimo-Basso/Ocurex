@@ -82,7 +82,7 @@ public class CRegistrarDirector {
 		
     	//json related
 		Director director = new Director( email , nombre , apellido , telefono , sexo , domicilio , LocalDate.now());
-		Util.objetoAJson( director , "src/application/model/json/directores.json" );
+		directorAJson( director , "src/application/model/json/directores.json" );
 		//dar alerta de que se guardo el director en el json
 		
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();

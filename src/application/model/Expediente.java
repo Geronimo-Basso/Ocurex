@@ -15,6 +15,9 @@ public class Expediente {
 		this.delito = delito;
 		this.fechaSalida = fechaSalida;
 	}
+	
+	public Expediente() {
+	}
 
 	public LocalDate getFechaCondena() {
 		return fechaCondena;

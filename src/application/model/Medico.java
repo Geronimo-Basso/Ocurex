@@ -25,6 +25,9 @@ public class Medico{
 		this.sexo = sexo;
 		this.fechaEntrada = fechaEntrada;
 	}
+	
+	public Medico() {
+	}
 
 	public String getEspecialidad() {
 		return especialidad;

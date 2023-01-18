@@ -23,6 +23,9 @@ public class Director {
 		this.fechaEntrada = fechaEntrada;
 	}
 
+	public Director() {
+	}
+	
 	public String getEmailUsuario() {
 		return emailUsuario;
 	}

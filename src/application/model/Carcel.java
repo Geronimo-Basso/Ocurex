@@ -13,6 +13,9 @@ public class Carcel {
 		this.nombre = nombre;
 		this.direccion = direccion;		
 	}
+	
+	public Carcel() {
+	}
 
 	public String getNombre() {
 		return nombre;

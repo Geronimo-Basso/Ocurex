@@ -16,6 +16,9 @@ public class Celda {
 		this.cantidadVentanas = cantidadVentanas;
 		this.metrosCuadrados = metrosCuadrados;
 	}
+	
+	public Celda() {
+	}
 
 	public int getNumeroCelda() {
 		return numeroCelda;
