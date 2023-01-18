@@ -4,8 +4,9 @@ import java.time.LocalDate;
 
 public class Medico{
 	
-	private String especialidad;
+
 	private String emailUsuario;
+	private String especialidad;
 	private String nombre;
 	private String apellido;
 	private int telefono;
@@ -13,7 +14,7 @@ public class Medico{
 	private String sexo;
 	private LocalDate fechaEntrada;
 	
-	public Medico(String especialidad, String emailUsuario, String nombre, String apellido, int telefono,
+	public Medico(String emailUsuario, String nombre, String apellido, String especialidad, int telefono,
 			String domicilio, String sexo, LocalDate fechaEntrada) {
 		this.especialidad = especialidad;
 		this.emailUsuario = emailUsuario;

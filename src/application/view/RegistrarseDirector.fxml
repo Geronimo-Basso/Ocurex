@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -56,28 +56,12 @@
                               <Insets left="850.0" top="150.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXTextArea fx:id="jfxEmail" prefHeight="52.0" prefWidth="426.0" promptText="Email" styleClass="forgetLabel" stylesheets="@../design/application.css">
-                           <font>
-                              <Font size="30.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets left="400.0" />
-                           </GridPane.margin>
-                        </JFXTextArea>
-                        <JFXTextArea fx:id="jfxNombre" prefHeight="64.0" prefWidth="423.0" promptText="Nombre" styleClass="forgetLabel" stylesheets="@../design/application.css">
-                           <font>
-                              <Font size="30.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets left="400.0" top="150.0" />
-                           </GridPane.margin>
-                        </JFXTextArea>
                         <ImageView fitHeight="76.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../design/envelope.png" />
                            </image>
                            <GridPane.margin>
-                              <Insets bottom="150.0" left="300.0" />
+                              <Insets bottom="150.0" left="250.0" top="150.0" />
                            </GridPane.margin>
                         </ImageView>
                         <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
@@ -85,31 +69,15 @@
                               <Image url="@../design/person@2x.png" />
                            </image>
                            <GridPane.margin>
-                              <Insets left="300.0" />
+                              <Insets left="250.0" top="150.0" />
                            </GridPane.margin>
                         </ImageView>
-                        <JFXTextArea fx:id="jfxTelefono" prefHeight="52.0" prefWidth="426.0" promptText="Telefono" styleClass="forgetLabel" stylesheets="@../design/application.css" GridPane.rowIndex="1">
-                           <font>
-                              <Font size="30.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets left="400.0" />
-                           </GridPane.margin>
-                        </JFXTextArea>
-                        <JFXTextArea fx:id="jfxApellido" prefHeight="64.0" prefWidth="423.0" promptText="Apellido" styleClass="forgetLabel" stylesheets="@../design/application.css" GridPane.rowIndex="1">
-                           <font>
-                              <Font size="30.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets left="400.0" />
-                           </GridPane.margin>
-                        </JFXTextArea>
                         <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                            <image>
                               <Image url="@../design/person@2x.png" />
                            </image>
                            <GridPane.margin>
-                              <Insets left="300.0" />
+                              <Insets bottom="150.0" left="250.0" />
                            </GridPane.margin>
                         </ImageView>
                         <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
@@ -117,31 +85,15 @@
                               <Image url="@../design/phone.png" />
                            </image>
                            <GridPane.margin>
-                              <Insets left="300.0" />
+                              <Insets bottom="150.0" left="250.0" top="150.0" />
                            </GridPane.margin>
                         </ImageView>
-                        <JFXTextArea fx:id="jfxSexo" prefHeight="64.0" prefWidth="423.0" promptText="Sexo" styleClass="forgetLabel" stylesheets="@../design/application.css" GridPane.rowIndex="2">
-                           <font>
-                              <Font size="30.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets left="400.0" />
-                           </GridPane.margin>
-                        </JFXTextArea>
-                        <JFXTextArea fx:id="jfxDomicilio" prefHeight="52.0" prefWidth="426.0" promptText="Domicilio" styleClass="forgetLabel" stylesheets="@../design/application.css" GridPane.rowIndex="2">
-                           <font>
-                              <Font size="30.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets left="400.0" />
-                           </GridPane.margin>
-                        </JFXTextArea>
                         <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
                            <image>
                               <Image url="@../design/house.png" />
                            </image>
                            <GridPane.margin>
-                              <Insets left="300.0" />
+                              <Insets bottom="150.0" left="250.0" />
                            </GridPane.margin>
                         </ImageView>
                         <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
@@ -149,9 +101,71 @@
                               <Image url="@../design/person@2x.png" />
                            </image>
                            <GridPane.margin>
-                              <Insets left="300.0" />
+                              <Insets bottom="325.0" left="250.0" />
                            </GridPane.margin>
                         </ImageView>
+                        <JFXButton fx:id="btnContinuar" onAction="#continuar" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Continuar" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="675.0" top="150.0" />
+                           </GridPane.margin>
+                        </JFXButton>
+                        <JFXTextField fx:id="jfxDomicilio" promptText="Domicilio" GridPane.rowIndex="2">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <GridPane.margin>
+                              <Insets bottom="150.0" left="350.0" right="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="jfxSexo" promptText="Sexo" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="350.0" right="50.0" top="150.0" />
+                           </GridPane.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="jfxApellido" promptText="Apellido" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="150.0" left="350.0" right="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="jfxTelefono" promptText="Telefono" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <GridPane.margin>
+                              <Insets left="350.0" right="50.0" />
+                           </GridPane.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="jfxNombre" promptText="Nombre">
+                           <GridPane.margin>
+                              <Insets left="350.0" right="50.0" top="175.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="jfxEmail" promptText="Email">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="350.0" right="50.0" />
+                           </GridPane.margin>
+                        </JFXTextField>
                      </children>
                   </GridPane>
                </center>

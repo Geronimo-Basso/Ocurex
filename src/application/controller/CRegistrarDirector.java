@@ -3,54 +3,48 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Vector;
-
 //json
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
-
 //jfoenix
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextArea;
 
+import application.Util;
 //javafx
 import application.model.Director;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
+import com.jfoenix.controls.JFXTextField;
 
 public class CRegistrarDirector {
 
     @FXML
-    private JFXTextArea jfxSexo;
-
-    @FXML
-    private JFXTextArea jfxEmail;
-
-    @FXML
-    private JFXTextArea jfxNombre;
-
-    @FXML
-    private JFXTextArea jfxTelefono;
-
-    @FXML
-    private JFXTextArea jfxApellido;
-
-    @FXML
-    private JFXTextArea jfxDomicilio;
+    private JFXButton btnVolverAlMenu;
 
     @FXML
     private JFXButton btnContinuar;
 
     @FXML
-    private JFXButton btnVolverAlMenu;
+    private JFXTextField jfxDomicilio;
 
+    @FXML
+    private JFXTextField jfxApellido;
 
+    @FXML
+    private JFXTextField jfxTelefono;
+
+    @FXML
+    private JFXTextField jfxNombre;
+
+    @FXML
+    private JFXTextField jfxEmail;
+    
+    @FXML
+    private JFXTextField jfxSexo;
 
     @FXML
     void volverAlMenu(ActionEvent event) {
@@ -84,6 +78,17 @@ public class CRegistrarDirector {
     
     @FXML
     void continuar(ActionEvent event) {
+    	String email = jfxEmail.getText();
+    	String nombre = jfxNombre.getText();
+    	String apellido = jfxApellido.getText();
+    	int telefono = Util.parsearInt(jfxTelefono.getText());
+    	String sexo = jfxSexo.getText();
+    	String domicilio = jfxDomicilio.getText();
+    	
+    	//todo chequear que los datos no esten vacios
+    	
+    	
+    	
     	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
        	//Registrar al cliente, y mandarlo al iniciar sesion asi puede entrar.
     	
@@ -117,21 +122,5 @@ public class CRegistrarDirector {
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     }	
     
-	public void serializar_Array_A_Json_Director() {
-		//Director director = new Director("Hola","Hola","Hola",1,"Hola","Hola",LocalDate.now());
-		Vector<Director> directores = new Vector<Director>();
-		directores.add(new Director("Hola","Hola","Hola",1,"Hola","Hola",LocalDate.now()));
 
-		
-		Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
-		String representacionBonita = prettyGson.toJson(directores);
-		System.out.println(representacionBonita);
-		
-		try(FileWriter writer = new FileWriter("dirdirdirdir.json")){
-			prettyGson.toJson(directores, writer);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-		
-	}
 }

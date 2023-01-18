@@ -1,34 +1,38 @@
 [
   {
-    "idUsuario": 1603,
+    "emailUsuario": "Ester.RamirezRomán@example.com",
+    "nombre": "Ester",
+    "apellido": "RamirezRomán",
     "telefono": "+34 829852943",
-    "domicilio": "Callejón Paulino Peñas 4, Tarragona, 08931",
     "sexo": "M",
     "fechaEntrada": "1989-12-09",
-    "cargo": "Director"
+    "domicilio": "Callejón Paulino Peñas 4, Tarragona, 08931"
   },
   {
-    "idUsuario": 2694,
+    "emailUsuario": "Hilda.RiveroSastre@example.com", 
+    "nombre": "Hilda",
+    "apellido": "RiveroSastre",
     "telefono": "+34 608405519",
-    "domicilio": "Rambla Domingo Hurtado 78, Baleares, 48553",
     "sexo": "F",
     "fechaEntrada": "2019-08-19",
-    "cargo": "Director"
+    "domicilio": "Rambla Domingo Hurtado 78, Baleares, 48553"
   },
   {
-    "idUsuario": 8684,
+    "emailUsuario": "Ágata.EscuderoRocha@example.com",  
+    "nombre": "Ágata",
+    "apellido": "EscuderoRocha",
     "telefono": "+34 639867079",
-    "domicilio": "Callejón Josefa Muro 229 Puerta 9, Salamanca, 05817",
     "sexo": "F",
     "fechaEntrada": "2015-12-30",
-    "cargo": "Director"
+    "domicilio": "Callejón Josefa Muro 229 Puerta 9, Salamanca, 05817"
   },
   {
-    "idUsuario": 2756,
+    "emailUsuario": "Luisina.NeiraVerdugo@example.com",  
+    "nombre": "Luisina",
+    "apellido": "NeiraVerdugo",
     "telefono": "+34 694880568",
-    "domicilio": "Ronda de Balduino Canales 8 Piso 9, Zaragoza, 44325",
     "sexo": "F",
     "fechaEntrada": "2012-02-02",
-    "cargo": "Director"
+    "domicilio": "Ronda de Balduino Canales 8 Piso 9, Zaragoza, 44325"
   }
 ]
