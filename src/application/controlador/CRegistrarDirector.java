@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.jfoenix.controls.JFXButton;
-
 import application.model.Director;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,11 +13,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import com.jfoenix.controls.JFXTextField;
-import com.google.gson.reflect.TypeToken;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
-import java.lang.reflect.Type;
+
 
 public class CRegistrarDirector {
 
@@ -83,12 +78,13 @@ public class CRegistrarDirector {
     	int telefono = Util.parsearInt(jfxTelefono.getText());
     	String sexo = jfxSexo.getText();
     	String domicilio = jfxDomicilio.getText();
-		System.out.println(email);    	//todo chequear que los datos no esten vacios
+		//falta chequear que los datos no esten vacios
 		
     	//json related
 		Director director = new Director( email , nombre , apellido , telefono , sexo , domicilio , LocalDate.now());
-		directorAJson( director , "src/application/model/json/directores.json" );
-    	
+		Util.objetoAJson( director , "src/application/model/json/directores.json" );
+		//dar alerta de que se guardo el director en el json
+		
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
     	Stage stage = new Stage();
 

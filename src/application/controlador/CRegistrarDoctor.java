@@ -1,6 +1,16 @@
 package application.controlador;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDate;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextArea;
+import com.jfoenix.controls.JFXTextField;
+
+import application.model.Director;
+import application.model.Medico;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,34 +22,42 @@ import javafx.stage.Stage;
 
 public class CRegistrarDoctor {
 
-    @FXML
-    private JFXTextArea jfxSexo;
+	@FXML
+	private JFXButton btnVolverAlMenu;
 
-    @FXML
-    private JFXTextArea jfxEmail;
+	@FXML
+	private JFXButton btnContinuar;
 
-    @FXML
-    private JFXTextArea jfxNombre;
+	@FXML
+	private JFXTextField jfxDomicilio;
 
-    @FXML
-    private JFXTextArea jfxTelefono;
+	@FXML
+	private JFXTextField jfxSexo;
 
-    @FXML
-    private JFXTextArea jfxApellido;
+	@FXML
+	private JFXTextField jfxApellido;
 
-    @FXML
-    private JFXTextArea jfxDomicilio;
+	@FXML
+	private JFXTextField jfxTelefono;
 
-    @FXML
-    private JFXButton btnContinuar;
+	@FXML
+	private JFXTextField jfxNombre;
 
-    @FXML
-    private JFXButton btnVolverAlMenu;
+	@FXML
+	private JFXTextField jfxEmail;
+
+	@FXML
+	private JFXTextField jfxEspecialidad;
 
     @FXML
     void volverAlMenu(ActionEvent event) {
+    
+    	//dar alerta de que se guardo el director en el json
+		
     	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
+		
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
+    	
     	Stage stage = new Stage();
 
     	try {
@@ -62,15 +80,33 @@ public class CRegistrarDoctor {
 
 			
 		} catch(Exception e) {
+			
 			e.printStackTrace();
+			
 		}
-		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    }
+       }
     
     @FXML
     void continuar(ActionEvent event) {
-    	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
-       	//Registrar al cliente, y mandarlo al iniciar sesion asi puede entrar.
+    	
+    	String email = jfxEmail.getText();
+    	
+    	String nombre = jfxNombre.getText();
+    	
+    	String apellido = jfxApellido.getText();
+    	
+    	int telefono = Util.parsearInt(jfxTelefono.getText());
+    	
+    	String sexo = jfxSexo.getText();
+    	
+    	String domicilio = jfxDomicilio.getText();
+    	
+    	String especialidad = jfxEspecialidad.getText();
+
+
+		Medico medico = new Medico( email , nombre , apellido , especialidad , telefono , domicilio , sexo , LocalDate.now());
+		
+		doctorAJson( medico , "src/application/model/json/medicos.json" );
     	
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
     	Stage stage = new Stage();
@@ -99,5 +135,15 @@ public class CRegistrarDoctor {
 		}
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     }	
+    
+	private static void doctorAJson (Medico medico, String sJson) {
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		try(FileWriter writer = new FileWriter(sJson)){
+			gson. toJson (medico, writer);
+		} catch (IOException e) {
+			e.printStackTrace ();
+		}
+	}
 		
 }
+

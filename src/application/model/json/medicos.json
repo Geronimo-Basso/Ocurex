@@ -1,98 +1,14 @@
-[
-  {
-    "idUsuario": 7439,
-    "telefono": "+34 746362909",
-    "domicilio": "Ronda Cebrián Montenegro 33 Apt. 21, Sevilla, 39041",
-    "sexo": "F",
-    "fechaEntrada": "1989-09-12",
-    "especialidad": "médico general"
-  },
-  {
-    "idUsuario": 1145,
-    "telefono": "+34 743096752",
-    "domicilio": "Pasaje de Galo Ortuño 248, Ciudad, 22033",
-    "sexo": "F",
-    "fechaEntrada": "2018-10-10",
-    "especialidad": "traumatólogo"
-  },
-  {
-    "idUsuario": 1259,
-    "telefono": "+34 680441756",
-    "domicilio": "Vial de Azahara Aroca 25, La Coruña, 35176",
-    "sexo": "M",
-    "fechaEntrada": "2004-12-09",
-    "especialidad": "ginecóloga"
-  },
-  {
-    "idUsuario": 817,
-    "telefono": "+34 850433191",
-    "domicilio": "Calle Porfirio Piquer 9 Puerta 2, Granada, 24712",
-    "sexo": "F",
-    "fechaEntrada": "1974-06-19",
-    "especialidad": "médico general"
-  },
-  {
-    "idUsuario": 6686,
-    "telefono": "+34 651329315",
-    "domicilio": "Glorieta de Eugenio Vilanova 4, Guipúzcoa, 22080",
-    "sexo": "F",
-    "fechaEntrada": "2021-05-06",
-    "especialidad": "traumatólogo"
-  },
-  {
-    "idUsuario": 9473,
-    "telefono": "+34 920089471",
-    "domicilio": "Glorieta de Micaela Riera 95 Apt. 22, Segovia, 09730",
-    "sexo": "M",
-    "fechaEntrada": "2020-12-28",
-    "especialidad": "ginecóloga"
-  },
-  {
-    "idUsuario": 9972,
-    "telefono": "+34 714170182",
-    "domicilio": "Vial de Gregorio Viana 72, Badajoz, 33747",
-    "sexo": "F",
-    "fechaEntrada": "2000-01-30",
-    "especialidad": "médico general"
-  },
-  {
-    "idUsuario": 1343,
-    "telefono": "+34 627544351",
-    "domicilio": "C. Pío Galan 47 Piso 4, Guadalajara, 38630",
-    "sexo": "F",
-    "fechaEntrada": "2012-11-04",
-    "especialidad": "traumatólogo"
-  },
-  {
-    "idUsuario": 4134,
-    "telefono": "+34 965686731",
-    "domicilio": "Cuesta de Úrsula Velasco 29, Barcelona, 36267",
-    "sexo": "M",
-    "fechaEntrada": "1976-08-18",
-    "especialidad": "ginecóloga"
-  },
-  {
-    "idUsuario": 4196,
-    "telefono": "+34 729022636",
-    "domicilio": "Cañada Jessica Rivera 26, Vizcaya, 15106",
-    "sexo": "F",
-    "fechaEntrada": "1975-12-23",
-    "especialidad": "médico general"
-  },
-  {
-    "idUsuario": 906,
-    "telefono": "+34 717286913",
-    "domicilio": "C. de Melania Heredia 18, Santa Cruz de Tenerife, 31382",
-    "sexo": "F",
-    "fechaEntrada": "2009-02-05",
-    "especialidad": "traumatólogo"
-  },
-  {
-    "idUsuario": 4156,
-    "telefono": "+34 877368797",
-    "domicilio": "Camino Inés Sánchez 197, Soria, 50378",
-    "sexo": "M",
-    "fechaEntrada": "2021-03-30",
-    "especialidad": "ginecóloga"
+{
+  "emailUsuario": "medico1",
+  "especialidad": "medico1",
+  "nombre": "medico1",
+  "apellido": "medico1",
+  "telefono": 111,
+  "domicilio": "medico1",
+  "sexo": "f",
+  "fechaEntrada": {
+    "year": 2023,
+    "month": 1,
+    "day": 18
   }
-]
+}
