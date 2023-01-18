@@ -1,6 +1,6 @@
 package application;
 	
-import application.controller.CIniciarSesion;
+import application.controlador.CIniciarSesion;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;

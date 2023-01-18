@@ -1,4 +1,4 @@
-package application;
+package application.controlador;
 
 public class Util {
 	

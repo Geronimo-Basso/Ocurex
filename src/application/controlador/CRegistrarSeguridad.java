@@ -1,50 +1,55 @@
-package application.controller;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.time.LocalDate;
-import java.util.Vector;
-//json
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-//jfoenix
+package application.controlador;
 import com.jfoenix.controls.JFXButton;
-
-import application.Util;
-//javafx
-import application.model.Director;
+import com.jfoenix.controls.JFXTextArea;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
-import com.jfoenix.controls.JFXTextField;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Reader;
+import java.lang.reflect.Type;
+//import java.util.ArrayList;
+import java.util.Vector;
 
-public class CRegistrarDirector {
+//import java.sql.Timestamp;
+//import java.util.Date;
+
+
+public class CRegistrarSeguridad {
 
     @FXML
-    private JFXButton btnVolverAlMenu;
+    private JFXTextArea jfxSexo;
+
+    @FXML
+    private JFXTextArea jfxEmail;
+
+    @FXML
+    private JFXTextArea jfxNombre;
+
+    @FXML
+    private JFXTextArea jfxTelefono;
+
+    @FXML
+    private JFXTextArea jfxApellido;
+
+    @FXML
+    private JFXTextArea jfxDomicilio;
 
     @FXML
     private JFXButton btnContinuar;
 
     @FXML
-    private JFXTextField jfxDomicilio;
+    private JFXButton btnVolverAlMenu;
 
-    @FXML
-    private JFXTextField jfxApellido;
-
-    @FXML
-    private JFXTextField jfxTelefono;
-
-    @FXML
-    private JFXTextField jfxNombre;
-
-    @FXML
-    private JFXTextField jfxEmail;
-    
-    @FXML
-    private JFXTextField jfxSexo;
 
     @FXML
     void volverAlMenu(ActionEvent event) {
@@ -52,24 +57,24 @@ public class CRegistrarDirector {
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
     	Stage stage = new Stage();
 
-    	
     	try {
  
-			FXMLLoader loader7 = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
+			FXMLLoader loader9 = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
 			
-			CIniciarSesion controlador7 = new CIniciarSesion(); //creo el controlador
+			CIniciarSesion controlador9 = new CIniciarSesion(); //creo el controlador
 		
-			loader7.setController(controlador7); //seteo el controlador con el loader que cree antes.
+			loader9.setController(controlador9); //seteo el controlador con el loader que cree antes.
 			
-			Parent root7 = loader7.load(); //lo pongo como parent
+			Parent root9 = loader9.load(); //lo pongo como parent
 			
-			Scene scene = new Scene( root7 );
+			Scene scene = new Scene( root9 );
 			
-			stage.setScene( scene );
-									
-			stage.show();//muestro la el archivo.
+			stage.setScene(scene);
 			
-			priorStage.close();			
+			stage.show();
+						
+			priorStage.close();	
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -78,17 +83,7 @@ public class CRegistrarDirector {
     
     @FXML
     void continuar(ActionEvent event) {
-    	String email = jfxEmail.getText();
-    	String nombre = jfxNombre.getText();
-    	String apellido = jfxApellido.getText();
-    	int telefono = Util.parsearInt(jfxTelefono.getText());
-    	String sexo = jfxSexo.getText();
-    	String domicilio = jfxDomicilio.getText();
-    	
-    	//todo chequear que los datos no esten vacios
-    	
-    	
-    	
+    
     	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
        	//Registrar al cliente, y mandarlo al iniciar sesion asi puede entrar.
     	
@@ -110,8 +105,6 @@ public class CRegistrarDirector {
 			stage.setScene(scene);
 			
 			stage.show();
-			
-			//serializar_Array_A_Json_Director();
 						
 			priorStage.close();	
 
@@ -120,7 +113,5 @@ public class CRegistrarDirector {
 			e.printStackTrace();
 		}
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    }	
-    
-
+    } 	
 }

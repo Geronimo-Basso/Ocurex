@@ -1,80 +1,74 @@
-package application.controller;
+package application.controlador;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDate;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextArea;
+
+import application.model.Director;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.jfoenix.controls.JFXTextField;
 import com.google.gson.reflect.TypeToken;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
 import java.lang.reflect.Type;
-//import java.util.ArrayList;
-import java.util.Vector;
 
-//import java.sql.Timestamp;
-//import java.util.Date;
-
-
-public class CRegistrarSeguridad {
+public class CRegistrarDirector {
 
     @FXML
-    private JFXTextArea jfxSexo;
-
-    @FXML
-    private JFXTextArea jfxEmail;
-
-    @FXML
-    private JFXTextArea jfxNombre;
-
-    @FXML
-    private JFXTextArea jfxTelefono;
-
-    @FXML
-    private JFXTextArea jfxApellido;
-
-    @FXML
-    private JFXTextArea jfxDomicilio;
+    private JFXButton btnVolverAlMenu;
 
     @FXML
     private JFXButton btnContinuar;
 
     @FXML
-    private JFXButton btnVolverAlMenu;
+    private JFXTextField jfxDomicilio;
 
+    @FXML
+    private JFXTextField jfxApellido;
+
+    @FXML
+    private JFXTextField jfxTelefono;
+
+    @FXML
+    private JFXTextField jfxNombre;
+
+    @FXML
+    private JFXTextField jfxEmail;
+    
+    @FXML
+    private JFXTextField jfxSexo;
 
     @FXML
     void volverAlMenu(ActionEvent event) {
     	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
     	Stage stage = new Stage();
-
+    	
     	try {
  
-			FXMLLoader loader9 = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
+			FXMLLoader loader7 = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
 			
-			CIniciarSesion controlador9 = new CIniciarSesion(); //creo el controlador
+			CIniciarSesion controlador7 = new CIniciarSesion(); //creo el controlador
 		
-			loader9.setController(controlador9); //seteo el controlador con el loader que cree antes.
+			loader7.setController(controlador7); //seteo el controlador con el loader que cree antes.
 			
-			Parent root9 = loader9.load(); //lo pongo como parent
+			Parent root7 = loader7.load(); //lo pongo como parent
 			
-			Scene scene = new Scene( root9 );
+			Scene scene = new Scene( root7 );
 			
-			stage.setScene(scene);
+			stage.setScene( scene );
+									
+			stage.show();//muestro la el archivo.
 			
-			stage.show();
-						
-			priorStage.close();	
-			
+			priorStage.close();			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -83,9 +77,17 @@ public class CRegistrarSeguridad {
     
     @FXML
     void continuar(ActionEvent event) {
-    
-    	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
-       	//Registrar al cliente, y mandarlo al iniciar sesion asi puede entrar.
+    	String email = jfxEmail.getText();
+    	String nombre = jfxNombre.getText();
+    	String apellido = jfxApellido.getText();
+    	int telefono = Util.parsearInt(jfxTelefono.getText());
+    	String sexo = jfxSexo.getText();
+    	String domicilio = jfxDomicilio.getText();
+		System.out.println(email);    	//todo chequear que los datos no esten vacios
+		
+    	//json related
+		Director director = new Director( email , nombre , apellido , telefono , sexo , domicilio , LocalDate.now());
+		directorAJson( director , "src/application/model/json/directores.json" );
     	
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
     	Stage stage = new Stage();
@@ -105,7 +107,7 @@ public class CRegistrarSeguridad {
 			stage.setScene(scene);
 			
 			stage.show();
-						
+									
 			priorStage.close();	
 
 			
@@ -113,5 +115,16 @@ public class CRegistrarSeguridad {
 			e.printStackTrace();
 		}
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    } 	
+    }
+	
+	private static void directorAJson (Director empleado, String sJson) {
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		try(FileWriter writer = new FileWriter(sJson)){
+			gson. toJson (empleado, writer);
+		} catch (IOException e) {
+			e.printStackTrace ();
+		}
+	}
+		
 }
+

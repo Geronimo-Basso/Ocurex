@@ -1,4 +1,4 @@
-package application.controller;
+package application.controlador;
 
 public class CMenuIniciarSesion {
 

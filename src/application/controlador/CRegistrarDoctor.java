@@ -1,4 +1,4 @@
-package application.controller;
+package application.controlador;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextArea;
 import javafx.event.ActionEvent;

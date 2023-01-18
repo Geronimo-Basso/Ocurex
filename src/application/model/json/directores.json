@@ -1,38 +1,13 @@
-[
-  {
-    "emailUsuario": "Ester.RamirezRomán@example.com",
-    "nombre": "Ester",
-    "apellido": "RamirezRomán",
-    "telefono": "+34 829852943",
-    "sexo": "M",
-    "fechaEntrada": "1989-12-09",
-    "domicilio": "Callejón Paulino Peñas 4, Tarragona, 08931"
-  },
-  {
-    "emailUsuario": "Hilda.RiveroSastre@example.com", 
-    "nombre": "Hilda",
-    "apellido": "RiveroSastre",
-    "telefono": "+34 608405519",
-    "sexo": "F",
-    "fechaEntrada": "2019-08-19",
-    "domicilio": "Rambla Domingo Hurtado 78, Baleares, 48553"
-  },
-  {
-    "emailUsuario": "Ágata.EscuderoRocha@example.com",  
-    "nombre": "Ágata",
-    "apellido": "EscuderoRocha",
-    "telefono": "+34 639867079",
-    "sexo": "F",
-    "fechaEntrada": "2015-12-30",
-    "domicilio": "Callejón Josefa Muro 229 Puerta 9, Salamanca, 05817"
-  },
-  {
-    "emailUsuario": "Luisina.NeiraVerdugo@example.com",  
-    "nombre": "Luisina",
-    "apellido": "NeiraVerdugo",
-    "telefono": "+34 694880568",
-    "sexo": "F",
-    "fechaEntrada": "2012-02-02",
-    "domicilio": "Ronda de Balduino Canales 8 Piso 9, Zaragoza, 44325"
+{
+  "emailUsuario": "victor",
+  "nombre": "victor",
+  "apellido": "victor",
+  "telefono": 1,
+  "domicilio": "victor",
+  "sexo": "victor",
+  "fechaEntrada": {
+    "year": 2023,
+    "month": 1,
+    "day": 18
   }
-]
+}
