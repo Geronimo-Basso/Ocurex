@@ -1,54 +1,52 @@
 package application.controlador;
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextArea;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.Reader;
-import java.lang.reflect.Type;
-//import java.util.ArrayList;
+import java.time.LocalDate;
 import java.util.Vector;
-
-//import java.sql.Timestamp;
-//import java.util.Date;
-
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+import application.model.Seguridad;
 
 public class CRegistrarSeguridad {
 
     @FXML
-    private JFXTextArea jfxSexo;
-
-    @FXML
-    private JFXTextArea jfxEmail;
-
-    @FXML
-    private JFXTextArea jfxNombre;
-
-    @FXML
-    private JFXTextArea jfxTelefono;
-
-    @FXML
-    private JFXTextArea jfxApellido;
-
-    @FXML
-    private JFXTextArea jfxDomicilio;
-
-    @FXML
-    private JFXButton btnContinuar;
-
-    @FXML
     private JFXButton btnVolverAlMenu;
+
+    @FXML
+    private JFXButton btnRegistrarse;
+
+    @FXML
+    private JFXTextField jfxDomicilio;
+
+    @FXML
+    private JFXTextField jfxTelefono;
+
+    @FXML
+    private JFXTextField jfxApellido;
+
+    @FXML
+    private JFXTextField jfxSexo;
+
+    @FXML
+    private JFXTextField jfxNombre;
+
+    @FXML
+    private JFXTextField jfxEmail;
+
+    @FXML
+    private JFXPasswordField jfxPassword;
+
+    @FXML
+    private JFXTextField jfxZonaControla;
 
 
     @FXML
@@ -82,7 +80,41 @@ public class CRegistrarSeguridad {
     }
     
     @FXML
-    void continuar(ActionEvent event) {
+    void registrarse(ActionEvent event) {
+    	String email = jfxEmail.getText();
+    	String nombre = jfxNombre.getText();
+    	String apellido = jfxApellido.getText();
+    	String password = jfxPassword.getText();
+    	int telefono = Util.parsearInt(jfxTelefono.getText());
+    	String sexo = jfxSexo.getText();
+    	String domicilio = jfxDomicilio.getText();
+    	String zonaControla = jfxZonaControla.getText();
+
+
+		Seguridad seguridad = new Seguridad( email , nombre , apellido , password ,telefono , domicilio , sexo , zonaControla , LocalDate.now());
+		Seguridad seguridad1 = new Seguridad( "flabio.rodriguez@example.com" , "Flabio" , "Rodriguez" , "seguridad24" , 652789254 , "Glorieta Loreto Nicolás 6, Ceuta, 04195" , "M" ,"Edificio A , planta B" , LocalDate.now());
+		Seguridad seguridad2 = new Seguridad( "santiago.martinez@example.com" , "Santiago" , "Martinez" , "nosequeponer12" , 658587235 , "Calle Ángeles Mendizábal 7 Apt. 91, Cádiz, 24435" , "M" ,"Edificio A , comedor" , LocalDate.now());
+		Seguridad seguridad3 = new Seguridad( "nicolas.fernandez@example.com" , "Nicolas" , "Fernandez" , "segurata4life" , 651027841 , "Pasadizo de Eduardo Baños 5 Piso 3, Ourense, 30825" , "M" , "Edificio B, patio afuera" ,LocalDate.now());
+    	Vector<Seguridad> seguridades = new Vector<Seguridad>();
+    	seguridades.add(seguridad);
+    	seguridades.add(seguridad1);
+    	seguridades.add(seguridad2);
+    	seguridades.add(seguridad3);
+		
+		Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
+		String representacionBonita = prettyGson.toJson(seguridad);
+		System.out.println(representacionBonita);
+		
+		
+		try(FileWriter writer = new FileWriter("src/application/model/json/seguridad.json")){
+			
+			prettyGson.toJson( seguridades , writer);
+			
+	    } catch (IOException e) {
+	    	
+	        e.printStackTrace();
+	        
+	    }
     
     	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
        	//Registrar al cliente, y mandarlo al iniciar sesion asi puede entrar.

@@ -17,6 +17,7 @@ public class Seguridad {
 	private int telefono;
 	private String domicilio;
 	private String sexo;
+	private String zonaControla;
 	private LocalDate fechaEntrada;
 	
 	/**
@@ -28,9 +29,12 @@ public class Seguridad {
 	 * @param telefono
 	 * @param domicilio
 	 * @param sexo
+	 * @param zonaControla
 	 * @param fechaEntrada
 	 */
-	public Seguridad(String emailUsuario, String nombre, String apellido, String password, int telefono,String domicilio, String sexo, LocalDate fechaEntrada) {
+	public Seguridad (String emailUsuario, String nombre, String apellido, String password, int telefono,
+			String domicilio, String sexo, String zonaControla, LocalDate fechaEntrada) {
+		super();
 		this.emailUsuario = emailUsuario;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -38,12 +42,12 @@ public class Seguridad {
 		this.telefono = telefono;
 		this.domicilio = domicilio;
 		this.sexo = sexo;
+		this.zonaControla = zonaControla;
 		this.fechaEntrada = fechaEntrada;
 	}
 	
-
 	public Seguridad() {
-	
+		
 	}
 
 	public String getEmailUsuario() {
@@ -102,6 +106,14 @@ public class Seguridad {
 		this.sexo = sexo;
 	}
 
+	public String getZonaControla() {
+		return zonaControla;
+	}
+
+	public void setZonaControla(String zonaControla) {
+		this.zonaControla = zonaControla;
+	}
+
 	public LocalDate getFechaEntrada() {
 		return fechaEntrada;
 	}
@@ -109,8 +121,7 @@ public class Seguridad {
 	public void setFechaEntrada(LocalDate fechaEntrada) {
 		this.fechaEntrada = fechaEntrada;
 	}
-	
-	
+
 
 	
 }
