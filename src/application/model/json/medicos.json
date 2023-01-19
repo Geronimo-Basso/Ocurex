@@ -1,14 +1,47 @@
-{
-  "emailUsuario": "medico1",
-  "especialidad": "medico1",
-  "nombre": "medico1",
-  "apellido": "medico1",
-  "telefono": 111,
-  "domicilio": "medico1",
-  "sexo": "f",
-  "fechaEntrada": {
-    "year": 2023,
-    "month": 1,
-    "day": 18
+[
+  {
+    "emailUsuario": "angel.charte@example.com",
+    "nombre": "Angel",
+    "apellido": "Chartel",
+    "password": "ibuprofeno1",
+    "especialidad": "Medicina familiar",
+    "telefono": 624785123,
+    "domicilio": "C/Principe Asturias 25, 28670",
+    "sexo": "M",
+    "fechaEntrada": {
+      "year": 2023,
+      "month": 1,
+      "day": 19
+    }
+  },
+  {
+    "emailUsuario": "rafael.mur@example.com",
+    "nombre": "Rafael",
+    "apellido": "Mur",
+    "password": "farmacia72",
+    "especialidad": "Traumatologia",
+    "telefono": 658412784,
+    "domicilio": "C/Tajo 12, 28670",
+    "sexo": "M",
+    "fechaEntrada": {
+      "year": 2023,
+      "month": 1,
+      "day": 19
+    }
+  },
+  {
+    "emailUsuario": "damian.olmo@example.com",
+    "nombre": "Damian",
+    "apellido": "Olmo",
+    "password": "garganta79",
+    "especialidad": "Cirugia",
+    "telefono": 632478652,
+    "domicilio": "C/San Francisco 22, 28670",
+    "sexo": "M",
+    "fechaEntrada": {
+      "year": 2023,
+      "month": 1,
+      "day": 19
+    }
   }
-}
+]

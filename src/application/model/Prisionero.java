@@ -19,8 +19,9 @@ public class Prisionero{
 		this.fechaNacimiento = fechaNacimiento;
 		this.edad = edad;
 	}
-
+	
 	public Prisionero() {
+		
 	}
 	
 	public String getIdentificadorPreso() {

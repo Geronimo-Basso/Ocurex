@@ -2,30 +2,49 @@ package application.model;
 
 import java.time.LocalDate;
 
+/**
+ * Class Director
+ * created 19/01/2023
+ * @author GeronimoBasso
+ *
+ */
 public class Director {
 	
 	private String emailUsuario;
 	private String nombre;
 	private String apellido;
+	private String password;
 	private int telefono;
 	private String domicilio;
 	private String sexo;
 	private LocalDate fechaEntrada;
 	
-	public Director(String emailUsuario, String nombre, String apellido, int telefono, String domicilio, String sexo,
-			LocalDate fechaEntrada) {
+	/**
+	 * Constructor class Director
+	 * @param emailUsuario
+	 * @param nombre
+	 * @param apellido
+	 * @param password
+	 * @param telefono
+	 * @param domicilio
+	 * @param sexo
+	 * @param fechaEntrada
+	 */
+	public Director(String emailUsuario, String nombre, String apellido, String password, int telefono,String domicilio, String sexo, LocalDate fechaEntrada) {
 		this.emailUsuario = emailUsuario;
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.password = password;
 		this.telefono = telefono;
 		this.domicilio = domicilio;
 		this.sexo = sexo;
 		this.fechaEntrada = fechaEntrada;
 	}
-
-	public Director() {
-	}
 	
+	public Director() {
+		
+	}
+
 	public String getEmailUsuario() {
 		return emailUsuario;
 	}
@@ -48,6 +67,14 @@ public class Director {
 
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public int getTelefono() {
@@ -84,7 +111,4 @@ public class Director {
 	
 	
 	
-	
-	
-
 }

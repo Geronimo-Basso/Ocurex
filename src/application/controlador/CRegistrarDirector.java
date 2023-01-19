@@ -2,6 +2,7 @@ package application.controlador;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.Vector;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.jfoenix.controls.JFXButton;
@@ -14,6 +15,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import com.jfoenix.controls.JFXTextField;
 
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+import javafx.fxml.FXML;
 
 public class CRegistrarDirector {
 
@@ -21,25 +26,28 @@ public class CRegistrarDirector {
     private JFXButton btnVolverAlMenu;
 
     @FXML
-    private JFXButton btnContinuar;
+    private JFXButton btnRegistrarse;
 
     @FXML
     private JFXTextField jfxDomicilio;
 
     @FXML
+    private JFXTextField jfxTelefono;
+
+    @FXML
     private JFXTextField jfxApellido;
 
     @FXML
-    private JFXTextField jfxTelefono;
+    private JFXTextField jfxSexo;
 
     @FXML
     private JFXTextField jfxNombre;
 
     @FXML
     private JFXTextField jfxEmail;
-    
+
     @FXML
-    private JFXTextField jfxSexo;
+    private JFXPasswordField jfxPassword;
 
     @FXML
     void volverAlMenu(ActionEvent event) {
@@ -71,19 +79,44 @@ public class CRegistrarDirector {
     }
     
     @FXML
-    void continuar(ActionEvent event) {
+    void registrarse(ActionEvent event) {
+    	
     	String email = jfxEmail.getText();
     	String nombre = jfxNombre.getText();
     	String apellido = jfxApellido.getText();
+    	String password = jfxPassword.getText();
     	int telefono = Util.parsearInt(jfxTelefono.getText());
     	String sexo = jfxSexo.getText();
     	String domicilio = jfxDomicilio.getText();
-		//falta chequear que los datos no esten vacios
 		
     	//json related
-		Director director = new Director( email , nombre , apellido , telefono , sexo , domicilio , LocalDate.now());
-		directorAJson( director , "src/application/model/json/directores.json" );
-		//dar alerta de que se guardo el director en el json
+		Director director = new Director( email , nombre , apellido , password , telefono , sexo , domicilio , LocalDate.now());
+		Director director1 = new Director( "federico.fernandez@example.com", "Federico", "Fernandez" , "uruguay2020" ,672122544 , "M" , "Gran via 4, 28019" , LocalDate.now());
+		Director director2 = new Director( "fernando.alonso@example.com", "Fernando", "Alonso" , "iniesta2010" ,621125255 , "M" , "Pablo Alonzo 7, 28019" , LocalDate.now());
+		Director director3 = new Director( "agustin.sosa@example.com", "Agustin", "Sosa" ,"password123",687754854 , "M" , "Calle tajo 27, 28670" , LocalDate.now());
+		Director director4 = new Director( "federico.fernandez@example.com", "Manuela", "Barrios" , "abcdefg987" ,672154784 , "F" , "Calle principe asturias 12, 28670" , LocalDate.now());
+		
+    	Vector<Director> directores = new Vector<Director>();
+    	directores.add(director);
+    	directores.add(director1);
+    	directores.add(director2);
+    	directores.add(director3);
+    	directores.add(director4);
+		
+		Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
+		String representacionBonita = prettyGson.toJson(directores);
+		System.out.println(representacionBonita);
+		
+		
+		try(FileWriter writer = new FileWriter("src/application/model/json/directores.json")){
+			
+			prettyGson.toJson(directores, writer);
+			
+	    } catch (IOException e) {
+	    	
+	        e.printStackTrace();
+	        
+	    }
 		
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
     	Stage stage = new Stage();
@@ -112,15 +145,6 @@ public class CRegistrarDirector {
 		}
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     }
-	
-	private static void directorAJson (Director empleado, String sJson) {
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		try(FileWriter writer = new FileWriter(sJson)){
-			gson. toJson (empleado, writer);
-		} catch (IOException e) {
-			e.printStackTrace ();
-		}
-	}
 		
 }
 
