@@ -1,54 +1,72 @@
 [
   {
+    "emailUsuario": "GERONIMO",
+    "nombre": "BASSO",
+    "apellido": "SOSA",
+    "password": "aaa",
+    "telefono": 15,
+    "domicilio": "M",
+    "sexo": "aa",
+    "fechaEntrada": {
+      "year": 2023,
+      "month": 1,
+      "day": 21
+    }
+  },
+  {
     "emailUsuario": "federico.fernandez@example.com",
     "nombre": "Federico",
     "apellido": "Fernandez",
+    "password": "uruguay2020",
     "telefono": 672122544,
     "domicilio": "M",
     "sexo": "Gran via 4, 28019",
     "fechaEntrada": {
       "year": 2023,
       "month": 1,
-      "day": 19
+      "day": 21
     }
   },
   {
     "emailUsuario": "fernando.alonso@example.com",
     "nombre": "Fernando",
     "apellido": "Alonso",
+    "password": "iniesta2010",
     "telefono": 621125255,
     "domicilio": "M",
     "sexo": "Pablo Alonzo 7, 28019",
     "fechaEntrada": {
       "year": 2023,
       "month": 1,
-      "day": 19
+      "day": 21
     }
   },
   {
     "emailUsuario": "agustin.sosa@example.com",
     "nombre": "Agustin",
     "apellido": "Sosa",
+    "password": "password123",
     "telefono": 687754854,
     "domicilio": "M",
     "sexo": "Calle tajo 27, 28670",
     "fechaEntrada": {
       "year": 2023,
       "month": 1,
-      "day": 19
+      "day": 21
     }
   },
   {
     "emailUsuario": "federico.fernandez@example.com",
     "nombre": "Manuela",
     "apellido": "Barrios",
+    "password": "abcdefg987",
     "telefono": 672154784,
     "domicilio": "F",
     "sexo": "Calle principe asturias 12, 28670",
     "fechaEntrada": {
       "year": 2023,
       "month": 1,
-      "day": 19
+      "day": 21
     }
   }
 ]

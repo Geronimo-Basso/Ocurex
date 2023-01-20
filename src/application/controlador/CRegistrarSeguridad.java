@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -47,6 +48,9 @@ public class CRegistrarSeguridad {
 
     @FXML
     private JFXTextField jfxZonaControla;
+    
+    @FXML
+    private Label label;
 
 
     @FXML
