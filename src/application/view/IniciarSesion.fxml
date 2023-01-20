@@ -4,6 +4,7 @@
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -105,6 +106,14 @@
                               <Insets left="20.0" />
                            </GridPane.margin>
                         </ImageView>
+                        <Label fx:id="label" textFill="RED" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="300.0" top="150.0" />
+                           </GridPane.margin>
+                        </Label>
                      </children>
                   </GridPane>
                </center>
