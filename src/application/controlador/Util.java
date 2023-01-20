@@ -115,5 +115,21 @@ public class Util{
     	return administrador;
     	
     }
+    
+    public static boolean isEmail( String email ) {
+        String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+        return email.matches(regex);
+    }
+    
+    public static String removeSpaces( String str ) {
+        return str.replaceAll("\\s", "");
+    }
+
+    public static boolean isValidPassword( String password ) {
+        String regex = "^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]{8,})$";
+        return password.matches(regex);
+    }
+
+
 
 }
