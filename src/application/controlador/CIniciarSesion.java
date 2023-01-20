@@ -117,7 +117,7 @@ public class CIniciarSesion {
 		Stage stage = new Stage();
     	try {
    		 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/RegistrarseMenu.fxml")); 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Director.fxml")); 
 			
 			CRegistrarMenu controlador2 = new CRegistrarMenu(); 
 			
