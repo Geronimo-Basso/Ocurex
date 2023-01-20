@@ -1,218 +1,47 @@
 [
   {
-    "idUsuario": 2214,
-    "telefono": "+34 869903431",
-    "domicilio": "C. de Flavio Báez 719 Apt. 48, Cádiz, 07007",
+    "emailUsuario": "flabio.rodriguez@example.com",
+    "nombre": "Flabio",
+    "apellido": "Rodriguez",
+    "password": "seguridad24",
+    "telefono": 652789254,
+    "domicilio": "Glorieta Loreto Nicolás 6, Ceuta, 04195",
     "sexo": "M",
-    "fechaEntrada": "1989-02-18",
-    "login": "login",
-    "pass": "pass"
+    "zonaControla": "Edificio A , planta B",
+    "fechaEntrada": {
+      "year": 2023,
+      "month": 1,
+      "day": 20
+    }
   },
   {
-    "idUsuario": 6678,
-    "telefono": "+34 739869247",
-    "domicilio": "Cuesta de Bernardino Abril 16, Asturias, 05087",
+    "emailUsuario": "santiago.martinez@example.com",
+    "nombre": "Santiago",
+    "apellido": "Martinez",
+    "password": "nosequeponer12",
+    "telefono": 658587235,
+    "domicilio": "Calle Ángeles Mendizábal 7 Apt. 91, Cádiz, 24435",
     "sexo": "M",
-    "fechaEntrada": "1993-07-05",
-    "login": "login",
-    "pass": "pass"
+    "zonaControla": "Edificio A , comedor",
+    "fechaEntrada": {
+      "year": 2023,
+      "month": 1,
+      "day": 20
+    }
   },
   {
-    "idUsuario": 9724,
-    "telefono": "+34 743177642",
-    "domicilio": "Cañada de Sabas Sosa 19 Piso 5, Huesca, 37193",
+    "emailUsuario": "nicolas.fernandez@example.com",
+    "nombre": "Nicolas",
+    "apellido": "Fernandez",
+    "password": "segurata4life",
+    "telefono": 651027841,
+    "domicilio": "Pasadizo de Eduardo Baños 5 Piso 3, Ourense, 30825",
     "sexo": "M",
-    "fechaEntrada": "2009-07-25",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 1606,
-    "telefono": "+34 668932614",
-    "domicilio": "Plaza Ambrosio Romero 86 Piso 9, Huesca, 46349",
-    "sexo": "M",
-    "fechaEntrada": "1992-05-31",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 547,
-    "telefono": "+34 996777099",
-    "domicilio": "Pasaje de Felix Pedraza 10 Piso 6, Burgos, 26777",
-    "sexo": "F",
-    "fechaEntrada": "2019-07-04",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 6111,
-    "telefono": "+34 741857205",
-    "domicilio": "Via de Leopoldo Villalobos 465, La Coruña, 04640",
-    "sexo": "M",
-    "fechaEntrada": "2015-12-24",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 4261,
-    "telefono": "+34 701120863",
-    "domicilio": "Vial de Lorenza Cuesta 54, Lugo, 35523",
-    "sexo": "F",
-    "fechaEntrada": "2013-11-16",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 3499,
-    "telefono": "+34 741690307",
-    "domicilio": "Pasadizo Ezequiel Sala 82 Piso 3, Navarra, 50110",
-    "sexo": "F",
-    "fechaEntrada": "1998-08-10",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 9907,
-    "telefono": "+34 730593351",
-    "domicilio": "Camino de Máximo Palma 215 Apt. 00, León, 35009",
-    "sexo": "F",
-    "fechaEntrada": "1981-10-02",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 8094,
-    "telefono": "+34 957749199",
-    "domicilio": "C. Goyo Francisco 1, Guadalajara, 11843",
-    "sexo": "M",
-    "fechaEntrada": "1972-09-28",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 9421,
-    "telefono": "+34 713102657",
-    "domicilio": "Pasadizo Irma Piñol 45, La Rioja, 37504",
-    "sexo": "M",
-    "fechaEntrada": "2007-06-04",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 7206,
-    "telefono": "+34 710160488",
-    "domicilio": "C. de Apolinar Carbonell 28 Piso 8, Huelva, 50904",
-    "sexo": "F",
-    "fechaEntrada": "1977-03-25",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 1816,
-    "telefono": "+34 632521413",
-    "domicilio": "Cañada de Prudencia Villalonga 42, Vizcaya, 12054",
-    "sexo": "M",
-    "fechaEntrada": "1999-01-18",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 6685,
-    "telefono": "+34 723715825",
-    "domicilio": "Pasadizo Olimpia Marín 92 Apt. 90, Murcia, 40207",
-    "sexo": "M",
-    "fechaEntrada": "1984-02-23",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 3576,
-    "telefono": "+34 607734434",
-    "domicilio": "Rambla de Oriana Herrero 62, Pontevedra, 35213",
-    "sexo": "M",
-    "fechaEntrada": "1976-04-02",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 1036,
-    "telefono": "+34 611391581",
-    "domicilio": "Urbanización Severiano Crespi 42, Barcelona, 44557",
-    "sexo": "F",
-    "fechaEntrada": "2005-12-15",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 9429,
-    "telefono": "+34 720018909",
-    "domicilio": "Rambla de Amada Bustamante 69 Apt. 16, Jaén, 07754",
-    "sexo": "M",
-    "fechaEntrada": "1972-10-22",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 7190,
-    "telefono": "+34 709026256",
-    "domicilio": "C. de Graciana Cano 72, Lleida, 31063",
-    "sexo": "F",
-    "fechaEntrada": "1983-04-11",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 5680,
-    "telefono": "+34 749411777",
-    "domicilio": "Camino Teodoro Fuentes 90 Puerta 7, Pontevedra, 11202",
-    "sexo": "F",
-    "fechaEntrada": "1988-12-04",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 1765,
-    "telefono": "+34 748262855",
-    "domicilio": "Ronda de Soledad Blázquez 92 Puerta 0, Álava, 10110",
-    "sexo": "M",
-    "fechaEntrada": "2002-10-14",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 2179,
-    "telefono": "+34 624505730",
-    "domicilio": "Calle de Jimena Aguilera 82 Apt. 18, Madrid, 46717",
-    "sexo": "F",
-    "fechaEntrada": "1976-01-15",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 7696,
-    "telefono": "+34 711529420",
-    "domicilio": "Plaza de Modesta Solano 86, Huesca, 18698",
-    "sexo": "F",
-    "fechaEntrada": "2012-07-23",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 5465,
-    "telefono": "+34 919345736",
-    "domicilio": "Cuesta Miriam Ortega 957 Puerta 0, Tarragona, 50723",
-    "sexo": "M",
-    "fechaEntrada": "1998-04-13",
-    "login": "login",
-    "pass": "pass"
-  },
-  {
-    "idUsuario": 2242,
-    "telefono": "+34 701726798",
-    "domicilio": "Plaza de Sonia Bartolomé 24 Puerta 4, Jaén, 29840",
-    "sexo": "F",
-    "fechaEntrada": "1981-05-08",
-    "login": "login",
-    "pass": "pass"
+    "zonaControla": "Edificio B, patio afuera",
+    "fechaEntrada": {
+      "year": 2023,
+      "month": 1,
+      "day": 20
+    }
   }
 ]

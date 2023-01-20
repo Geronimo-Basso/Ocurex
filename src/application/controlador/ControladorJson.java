@@ -19,10 +19,6 @@ public class ControladorJson {
 	public static Director comprobarExistenteDirector ( String email ) {
 		Director director = null;
 		Vector<Director> lista = recorrerDirectores();
-		System.out.println(lista.elementAt(0).getEmailUsuario());
-		System.out.println(lista.elementAt(1).getEmailUsuario());
-		System.out.println(lista.elementAt(2).getEmailUsuario());
-		System.out.println(lista.elementAt(3).getEmailUsuario());
 		
 		for (Director d : lista) {
 			
@@ -66,10 +62,6 @@ public class ControladorJson {
 	public static Medico comprobarExistenteMedico ( String email ) {
 		Medico medico = null;
 		Vector<Medico> lista = recorrerMedicos();
-		System.out.println(lista.elementAt(0).getEmailUsuario());
-		System.out.println(lista.elementAt(1).getEmailUsuario());
-		System.out.println(lista.elementAt(2).getEmailUsuario());
-		System.out.println(lista.elementAt(3).getEmailUsuario());
 		
 		for (Medico d : lista) {
 			
@@ -113,10 +105,6 @@ public class ControladorJson {
 	public static Seguridad comprobarExistenteSeguridad ( String email ) {
 		Seguridad seguridad = null;
 		Vector<Seguridad> lista = recorrerSeguridades();
-		System.out.println(lista.elementAt(0).getEmailUsuario());
-		System.out.println(lista.elementAt(1).getEmailUsuario());
-		System.out.println(lista.elementAt(2).getEmailUsuario());
-		System.out.println(lista.elementAt(3).getEmailUsuario());
 		
 		for (Seguridad d : lista) {
 			
@@ -160,10 +148,6 @@ public class ControladorJson {
 	public static Administrador comprobarExistenteAdministrador ( String email ) {
 		Administrador administrador = null;
 		Vector<Administrador> lista = recorrerAdministradores();
-		System.out.println(lista.elementAt(0).getEmailUsuario());
-		System.out.println(lista.elementAt(1).getEmailUsuario());
-		System.out.println(lista.elementAt(2).getEmailUsuario());
-		System.out.println(lista.elementAt(3).getEmailUsuario());
 		
 		for (Administrador d : lista) {
 			

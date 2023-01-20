@@ -40,45 +40,44 @@ public class CIniciarSesion {
 
     @FXML
     void iniciarSesion(ActionEvent event) {
-    	
-    	Stage priorStage = (Stage)btnRegistrarse.getScene().getWindow();
-		Stage stage = new Stage();
 		
     	Director directorComprobar = ControladorJson.comprobarExistenteDirector(usuario.getText());
     	director = directorComprobar;
-		if(!(directorComprobar == null)){
-			
-		}
-		//else if () {
-//			
-//		}else if() {
-//			
-//		}else if() {
-//			
-//		}else {
-//			
-//		}
+    	
+    	Medico medicoComprobar = ControladorJson.comprobarExistenteMedico(usuario.getText());
+    	medico = medicoComprobar;
+    	
+    	Administrador administradorComprobar = ControladorJson.comprobarExistenteAdministrador(usuario.getText());
+    	administrador = administradorComprobar;
+    	
+    	Seguridad seguridadComprobar = ControladorJson.comprobarExistenteSeguridad(usuario.getText());
+    	seguridad = seguridadComprobar;
+    	
+		System.out.println("H o l a");
 
-    	try {
- 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/MenuIniciarSesion.fxml")); 
+    	
+		if( ! ( directorComprobar == null ) ){
 			
-			CMenuIniciarSesion controlador2 = new CMenuIniciarSesion(); 
+			iniciarSesionDirector( event );
 			
-			loader2.setController(controlador2); 
-			
-			Parent root2 = loader2.load(); 
-			
-			Scene scene = new Scene( root2 );
-			
-			stage.setScene(scene);
-			
-			stage.show();
-			
-			priorStage.close();			
-		} catch(Exception e) {
-			e.printStackTrace();
 		}
+		else if (! ( medicoComprobar == null ) ) {
+			
+			iniciarSesionMedico( event );		
+			
+		}else if( ! ( administradorComprobar == null ) ) {
+			
+			iniciarSesionAdiministrador( event );
+
+
+		}else if( ! ( seguridadComprobar == null ) ) {
+			
+			iniciarSesionSeguridad( event );
+
+		}else {
+			label.setText("Error! NO existe ese usuario");
+		}
+		
     }
     
 
@@ -119,7 +118,7 @@ public class CIniciarSesion {
    		 
 			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Director.fxml")); 
 			
-			CRegistrarMenu controlador2 = new CRegistrarMenu(); 
+			CDirector controlador2 = new CDirector(); 
 			
 			loader2.setController(controlador2); 
 			
@@ -136,6 +135,86 @@ public class CIniciarSesion {
 			e.printStackTrace();
 		}
     }
+    
+    @FXML
+    void iniciarSesionMedico(ActionEvent event) {
+    	Stage priorStage = (Stage)btnRegistrarse.getScene().getWindow();
+		Stage stage = new Stage();
+    	try {
+   		 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Medico.fxml")); 
+			
+			CMedico controlador2 = new CMedico(); 
+			
+			loader2.setController(controlador2); 
+			
+			Parent root2 = loader2.load(); 
+			
+			Scene scene = new Scene( root2 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+			
+			priorStage.close();			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+    }
+    
+    @FXML
+    void iniciarSesionSeguridad(ActionEvent event) {
+    	Stage priorStage = (Stage)btnRegistrarse.getScene().getWindow();
+		Stage stage = new Stage();
+    	try {
+   		 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Seguridad.fxml")); 
+			
+			CSeguridad controlador2 = new CSeguridad(); 
+			
+			loader2.setController(controlador2); 
+			
+			Parent root2 = loader2.load(); 
+			
+			Scene scene = new Scene( root2 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+			
+			priorStage.close();			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+    }
+    
+    
+    @FXML
+    void iniciarSesionAdiministrador(ActionEvent event) {
+    	Stage priorStage = (Stage)btnRegistrarse.getScene().getWindow();
+		Stage stage = new Stage();
+    	try {
+   		 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Administrador.fxml")); 
+			
+			CAdministrador controlador2 = new CAdministrador(); 
+			
+			loader2.setController(controlador2); 
+			
+			Parent root2 = loader2.load(); 
+			
+			Scene scene = new Scene( root2 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+			
+			priorStage.close();			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+    }
+    
     
 	public static Director getDirector() {
 		return director;
