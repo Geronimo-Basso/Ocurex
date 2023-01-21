@@ -203,12 +203,12 @@
                               <Insets left="350.0" right="50.0" />
                            </GridPane.margin>
                         </JFXTextField>
-                        <Label fx:id="label" textFill="RED" GridPane.rowIndex="2">
+                        <Label fx:id="label" text="ERROR ! ALGUNO DE LOS DATOS ESTA MAL INGRESADO" textFill="RED" GridPane.rowIndex="2">
                            <font>
-                              <Font size="40.0" />
+                              <Font size="15.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="300.0" top="200.0" />
+                              <Insets left="150.0" top="150.0" />
                            </GridPane.margin>
                         </Label>
                      </children>
