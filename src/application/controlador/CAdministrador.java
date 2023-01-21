@@ -9,15 +9,31 @@ public class CAdministrador {
     private JFXButton btnVolverAlMenu;
 
     @FXML
-    private JFXButton btnRegistrarse;
+    private JFXButton btnVerInformacionMedicos;
 
     @FXML
-    void registrarse(ActionEvent event) {
+    private JFXButton btnVerInformacionSeguridades;
+
+    @FXML
+    private JFXButton btnVerInformacionDirectores;
+
+    @FXML
+    void volverAlMenu(ActionEvent event) {
+
+    }
+    
+    @FXML
+    void verMedicos(ActionEvent event) {
 
     }
 
     @FXML
-    void volverAlMenu(ActionEvent event) {
+    void verSeguratas(ActionEvent event) {
+
+    }
+
+    @FXML
+    void verDirectores(ActionEvent event) {
 
     }
 
