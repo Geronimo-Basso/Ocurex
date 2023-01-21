@@ -1,47 +1,18 @@
 [
   {
-    "emailUsuario": "flabio.rodriguez@example.com",
-    "nombre": "Flabio",
-    "apellido": "Rodriguez",
-    "password": "seguridad24",
-    "telefono": 652789254,
-    "domicilio": "Glorieta Loreto Nicolás 6, Ceuta, 04195",
-    "sexo": "M",
-    "zonaControla": "Edificio A , planta B",
-    "fechaEntrada": {
-      "year": 2023,
-      "month": 1,
-      "day": 20
-    }
+    "emailUsuario": "geronimo.basso@example.com",
+    "password": "admin1234"
   },
   {
-    "emailUsuario": "santiago.martinez@example.com",
-    "nombre": "Santiago",
-    "apellido": "Martinez",
-    "password": "nosequeponer12",
-    "telefono": 658587235,
-    "domicilio": "Calle Ángeles Mendizábal 7 Apt. 91, Cádiz, 24435",
-    "sexo": "M",
-    "zonaControla": "Edificio A , comedor",
-    "fechaEntrada": {
-      "year": 2023,
-      "month": 1,
-      "day": 20
-    }
+    "emailUsuario": "javier.cubas@example.com",
+    "password": "admin1234"
   },
   {
-    "emailUsuario": "nicolas.fernandez@example.com",
-    "nombre": "Nicolas",
-    "apellido": "Fernandez",
-    "password": "segurata4life",
-    "telefono": 651027841,
-    "domicilio": "Pasadizo de Eduardo Baños 5 Piso 3, Ourense, 30825",
-    "sexo": "M",
-    "zonaControla": "Edificio B, patio afuera",
-    "fechaEntrada": {
-      "year": 2023,
-      "month": 1,
-      "day": 20
-    }
+    "emailUsuario": "victor.martin@example.com",
+    "password": "admin1234"
+  },
+  {
+    "emailUsuario": "manuel.contreras@example.com",
+    "password": "admin1234"
   }
 ]
