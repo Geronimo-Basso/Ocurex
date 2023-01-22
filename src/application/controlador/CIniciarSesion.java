@@ -41,16 +41,16 @@ public class CIniciarSesion {
     @FXML
     void iniciarSesion(ActionEvent event) {
 		
-    	Director directorComprobar = ControladorJson.comprobarExistenteDirector(usuario.getText());
+    	Director directorComprobar = ControladorJson.comprobarExistenteDirector(usuario.getText() , password.getText() );
     	director = directorComprobar;
     	
-    	Medico medicoComprobar = ControladorJson.comprobarExistenteMedico(usuario.getText());
+    	Medico medicoComprobar = ControladorJson.comprobarExistenteMedico(usuario.getText() , password.getText() );
     	medico = medicoComprobar;
     	
-    	Administrador administradorComprobar = ControladorJson.comprobarExistenteAdministrador(usuario.getText());
+    	Administrador administradorComprobar = ControladorJson.comprobarExistenteAdministrador(usuario.getText() , password.getText() );
     	administrador = administradorComprobar;
     	
-    	Seguridad seguridadComprobar = ControladorJson.comprobarExistenteSeguridad(usuario.getText());
+    	Seguridad seguridadComprobar = ControladorJson.comprobarExistenteSeguridad(usuario.getText() , password.getText());
     	seguridad = seguridadComprobar;
     	
 		System.out.println("H o l a");

@@ -52,31 +52,31 @@
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets />
+                              <Insets left="850.0" top="150.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionMedicos" onAction="#verMedicos" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Ver medicos" GridPane.rowIndex="1">
+                        <JFXButton fx:id="btnVerInformacionMedicos" onAction="#verMedicos" prefHeight="99.0" prefWidth="190.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Ver medicos" GridPane.rowIndex="1">
                            <font>
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="200.0" />
+                              <Insets left="400.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionSeguridades" onAction="#verSeguratas" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Ver seguratas" GridPane.rowIndex="1">
+                        <JFXButton fx:id="btnVerInformacionSeguridades" onAction="#verSeguratas" prefHeight="95.0" prefWidth="191.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Ver seguratas" GridPane.rowIndex="2">
                            <font>
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="800.0" />
+                              <Insets left="400.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionDirectores" onAction="#verDirectores" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Ver Directores">
+                        <JFXButton fx:id="btnVerInformacionDirectores" onAction="#verDirectores" prefHeight="100.0" prefWidth="189.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Ver Directores">
                            <font>
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="500.0" />
+                              <Insets left="400.0" />
                            </GridPane.margin>
                         </JFXButton>
                      </children>

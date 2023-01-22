@@ -16,13 +16,13 @@ import application.model.Seguridad;
 
 public class ControladorJson {
 	
-	public static Director comprobarExistenteDirector ( String email ) {
+	public static Director comprobarExistenteDirector ( String email , String password) {
 		Director director = null;
 		Vector<Director> lista = recorrerDirectores();
 		
 		for (Director d : lista) {
-			
-			if (d.getEmailUsuario().equals( email )) {
+	
+			if (d.getEmailUsuario().equals( email ) && d.getPassword().equals( password )) {
 				
 				director = d;
 				
@@ -57,13 +57,13 @@ public class ControladorJson {
 		return lista;
 	}
 	
-	public static Medico comprobarExistenteMedico ( String email ) {
+	public static Medico comprobarExistenteMedico ( String email , String password) {
 		Medico medico = null;
 		Vector<Medico> lista = recorrerMedicos();
 		
 		for (Medico d : lista) {
 			
-			if (d.getEmailUsuario().equals( email )) {
+			if (d.getEmailUsuario().equals( email ) && d.getPassword().equals( password )) {
 				
 				medico = d;
 				
@@ -124,13 +124,13 @@ public class ControladorJson {
 //		
 //	}
 	
-	public static Seguridad comprobarExistenteSeguridad ( String email ) {
+	public static Seguridad comprobarExistenteSeguridad ( String email , String password ) {
 		Seguridad seguridad = null;
 		Vector<Seguridad> lista = recorrerSeguridades();
 		
 		for (Seguridad d : lista) {
 			
-			if (d.getEmailUsuario().equals( email )) {
+			if (d.getEmailUsuario().equals( email ) && d.getPassword().equals( password )) {
 				
 				seguridad = d;
 				
@@ -165,13 +165,13 @@ public class ControladorJson {
 		return lista;
 	}
 	
-	public static Administrador comprobarExistenteAdministrador ( String email ) {
+	public static Administrador comprobarExistenteAdministrador ( String email , String password ) {
 		Administrador administrador = null;
 		Vector<Administrador> lista = recorrerAdministradores();
 		
 		for (Administrador d : lista) {
 			
-			if (d.getEmailUsuario().equals( email )) {
+			if (d.getEmailUsuario().equals( email ) && d.getPassword().equals( password )) {
 				
 				administrador = d;
 				
