@@ -54,10 +54,10 @@ public class CAdministradorVistaMedico implements Initializable {
 
     @FXML
     private TableColumn<Medico, LocalDate> columaFechaEntrada;
-
     
-    ObservableList<Medico> list = FXCollections.observableArrayList(
-    		
+    private static Medico medicoAAgregar;
+    
+    ObservableList<Medico> list = FXCollections.observableArrayList(  
     		ControladorJson.recorrerMedicos().elementAt(0),
     		ControladorJson.recorrerMedicos().elementAt(1),
     		ControladorJson.recorrerMedicos().elementAt(2)
@@ -67,7 +67,8 @@ public class CAdministradorVistaMedico implements Initializable {
 
     @FXML
     void volverAlMenu(ActionEvent event) {
-    	
+
+
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
 		Stage stage = new Stage();
     	try {
@@ -105,8 +106,21 @@ public class CAdministradorVistaMedico implements Initializable {
 		tableColumaDiomicilio.setCellValueFactory(new PropertyValueFactory<Medico, String> ("domicilio") );
 		tableColumaSexo.setCellValueFactory(new PropertyValueFactory<Medico, String> ("sexo") );
 		columaFechaEntrada.setCellValueFactory(new PropertyValueFactory<Medico, LocalDate> ("fechaEntrada") );
+
+		table.setItems(list);			
+
 		
-		table.setItems(list);
 
 	}
+
+	public static Medico getMedicoAAgregar() {
+		return medicoAAgregar;
+	}
+
+	public static void setMedicoAAgregar(Medico medicoAAgregar) {
+		CAdministradorVistaMedico.medicoAAgregar = medicoAAgregar;
+	}
+	
+	
+	
 }

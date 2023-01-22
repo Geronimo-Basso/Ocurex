@@ -40,7 +40,6 @@ public class ControladorJson {
 		
 		try (Reader reader = new FileReader("src/application/model/json/directores.json")) {
 			
-			System.out.println("dentro del try");
 
 			Gson gson = new Gson();
 			
@@ -51,7 +50,6 @@ public class ControladorJson {
 			
 		} catch (IOException e) {
 			
-			System.out.println("dentro del else");
 
 			e.printStackTrace();
 		}
@@ -83,7 +81,6 @@ public class ControladorJson {
 		
 		try (Reader reader = new FileReader("src/application/model/json/medicos.json")) {
 			
-			System.out.println("dentro del try");
 
 			Gson gson = new Gson();
 			
@@ -94,13 +91,38 @@ public class ControladorJson {
 			
 		} catch (IOException e) {
 			
-			System.out.println("dentro del else");
 
 			e.printStackTrace();
 		}
 		
 		return lista;
 	}
+	
+//	public static void recorrerMedicosUnoAUno () {
+//		
+//		Vector<Medico> lista = new Vector<Medico>();
+//		
+//		try (Reader reader = new FileReader("src/application/model/json/medicos.json")) {
+//			
+//
+//			Gson gson = new Gson();
+//			
+//			Type tipoLista = new TypeToken<Vector<Medico>>() {
+//				
+//			}.getType();
+//			lista = gson.fromJson(reader, tipoLista);
+//			
+//			for(int i = 0 ; i < lista.size() ; i++){
+//				CAdministradorVistaMedico.setMedicoAAgregar(lista.elementAt(i));
+//			}
+//			
+//		} catch (IOException e) {
+//			
+//
+//			e.printStackTrace();
+//		}
+//		
+//	}
 	
 	public static Seguridad comprobarExistenteSeguridad ( String email ) {
 		Seguridad seguridad = null;
@@ -126,7 +148,6 @@ public class ControladorJson {
 		
 		try (Reader reader = new FileReader("src/application/model/json/seguridad.json")) {
 			
-			System.out.println("dentro del try");
 
 			Gson gson = new Gson();
 			
@@ -137,7 +158,6 @@ public class ControladorJson {
 			
 		} catch (IOException e) {
 			
-			System.out.println("dentro del else");
 
 			e.printStackTrace();
 		}
@@ -169,7 +189,6 @@ public class ControladorJson {
 		
 		try (Reader reader = new FileReader("src/application/model/json/administradores.json")) {
 			
-			System.out.println("dentro del try");
 
 			Gson gson = new Gson();
 			
@@ -180,8 +199,6 @@ public class ControladorJson {
 			
 		} catch (IOException e) {
 			
-			System.out.println("dentro del else");
-
 			e.printStackTrace();
 		}
 		
