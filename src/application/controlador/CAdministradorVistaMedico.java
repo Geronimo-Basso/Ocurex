@@ -2,6 +2,9 @@ package application.controlador;
 
 import java.net.URL;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
@@ -36,9 +39,6 @@ public class CAdministradorVistaMedico implements Initializable {
 
     @FXML
     private TableColumn<Medico, String> tableColumApellido;
-    
-    @FXML
-    private TableColumn<Medico, String> tableColumPassword;
 
     @FXML
     private TableColumn<Medico, String> tableColumEspecialidad;
@@ -57,14 +57,13 @@ public class CAdministradorVistaMedico implements Initializable {
     
     private static Medico medicoAAgregar;
     
-    ObservableList<Medico> list = FXCollections.observableArrayList(  
-    		ControladorJson.recorrerMedicos().elementAt(0),
-    		ControladorJson.recorrerMedicos().elementAt(1),
-    		ControladorJson.recorrerMedicos().elementAt(2)
-   	
-    );
+    private List<Medico> listaVector = new ArrayList<Medico>(ControladorJson.recorrerMedicos());
+    
+    ObservableList<Medico> list = FXCollections.observableArrayList(  listaVector );
 
-
+//    		ControladorJson.recorrerMedicos().elementAt(0),
+//    		ControladorJson.recorrerMedicos().elementAt(1),
+//    		ControladorJson.recorrerMedicos().elementAt(2)
     @FXML
     void volverAlMenu(ActionEvent event) {
 
@@ -100,7 +99,6 @@ public class CAdministradorVistaMedico implements Initializable {
 		columnaEmail.setCellValueFactory(new PropertyValueFactory<Medico, String> ("emailUsuario") );
 		tableColumNombre.setCellValueFactory(new PropertyValueFactory<Medico, String> ("nombre") );
 		tableColumApellido.setCellValueFactory(new PropertyValueFactory<Medico, String> ("apellido") );
-		tableColumPassword.setCellValueFactory(new PropertyValueFactory<Medico, String> ("password") );
 		tableColumEspecialidad.setCellValueFactory(new PropertyValueFactory<Medico, String> ("especialidad") );
 		tableColumaTelefono.setCellValueFactory(new PropertyValueFactory<Medico, Integer> ("telefono") );
 		tableColumaDiomicilio.setCellValueFactory(new PropertyValueFactory<Medico, String> ("domicilio") );

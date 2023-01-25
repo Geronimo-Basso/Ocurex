@@ -63,9 +63,7 @@ public class CRegistrarDoctor {
 
     @FXML
     void volverAlMenu(ActionEvent event) {
-    
-    	//dar alerta de que se guardo el director en el json
-		
+    		
     	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
 		
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();

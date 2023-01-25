@@ -61,15 +61,14 @@
                         </JFXButton>
                         <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                           <columns>
-                            <TableColumn fx:id="columnaEmail" prefWidth="122.0" text="Email" />
-                            <TableColumn fx:id="tableColumNombre" prefWidth="103.0" text="Nombre" />
-                              <TableColumn fx:id="tableColumApellido" prefWidth="90.0" text="Apellido" />
-                              <TableColumn fx:id="tableColumPassword" prefWidth="56.0" text="Password" />
+                            <TableColumn fx:id="columnaEmail" prefWidth="152.0" text="Email" />
+                            <TableColumn fx:id="tableColumNombre" prefWidth="95.0" text="Nombre" />
+                              <TableColumn fx:id="tableColumApellido" prefWidth="106.0" text="Apellido" />
                               <TableColumn fx:id="tableColumEspecialidad" prefWidth="91.0" text="Especialidad" />
-                              <TableColumn fx:id="tableColumaTelefono" prefWidth="100.0" text="Telefono" />
-                              <TableColumn fx:id="tableColumaDiomicilio" prefWidth="86.0" text="Domicilio" />
-                              <TableColumn fx:id="tableColumaSexo" prefWidth="119.0" text="Sexo" />
-                              <TableColumn fx:id="columaFechaEntrada" prefWidth="269.0" text="Fecha de entrada" />
+                              <TableColumn fx:id="tableColumaTelefono" prefWidth="101.0" text="Telefono" />
+                              <TableColumn fx:id="tableColumaDiomicilio" prefWidth="138.0" text="Domicilio" />
+                              <TableColumn fx:id="tableColumaSexo" prefWidth="96.0" text="Sexo" />
+                              <TableColumn fx:id="columaFechaEntrada" prefWidth="133.0" text="Fecha de entrada" />
                           </columns>
                         </TableView>
                      </children>
