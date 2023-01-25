@@ -104,14 +104,14 @@ public class CRegistrarDirector {
 			
 	    	//json related
 			Director director = new Director( email , nombre , apellido , password , telefono , sexo , domicilio , LocalDate.now());
-			Director director1 = new Director( "federico.fernandez@example.com", "Federico", "Fernandez" , "uruguay2020" ,672122544 , "M" , "Gran via 4, 28019" , LocalDate.of(2022,5,25));
-			Director director2 = new Director( "fernando.alonso@example.com", "Fernando", "Alonso" , "iniesta2010" ,621125255 , "M" , "Pablo Alonzo 7, 28019" , LocalDate.of(2021,7,29));
-			Director director3 = new Director( "agustin.sosa@example.com", "Agustin", "Sosa" ,"password123",687754854 , "M" , "Calle tajo 27, 28670" , LocalDate.of(2021,9,25));
-			Director director4 = new Director( "federico.fernandez@example.com", "Manuela", "Barrios" , "abcdefg987" ,672154784 , "F" , "Calle principe asturias 12, 28670" , LocalDate.of(2020,5,20));
-			Director director5 = new Director( "andrew.tate@example.com", "Andrew", "Tate" , "topg5577" ,621321457 , "M" , "Los tilos 12, 28571" , LocalDate.of(2021,2,15));
-			Director director6 = new Director( "tristian.blanco@example.com", "Tristan", "Blanco" , "tristanb74" ,657894521 , "M" , "Rafel Alberti, 28670" , LocalDate.of(2022,1,23));
-			Director director7 = new Director( "javier.ramirez@example.com", "Javier", "Ramirez" ,"tati1245",687541201 , "M" , "Benigno Granizo 1, 28654" , LocalDate.of(2023,1,10));
-			Director director8 = new Director( "jorge.garcia@example.com", "Jorge", "Garcia" , "richpor7" ,652147587 , "M" , "Pegasus drive 28,24714" , LocalDate.of(2021,7,9));
+			Director director1 = new Director( "federico.fernandez@example.com", "Federico", "Fernandez" , "uruguay2020" ,672122544 , "Gran via 4, 28019" , "M" , LocalDate.of(2022,5,25));
+			Director director2 = new Director( "fernando.alonso@example.com", "Fernando", "Alonso" , "iniesta2010" ,621125255 , "Pablo Alonzo 7, 28019" , "M" , LocalDate.of(2021,7,29));
+			Director director3 = new Director( "agustin.sosa@example.com", "Agustin", "Sosa" ,"password123",687754854 , "Calle tajo 27, 28670" , "M" , LocalDate.of(2021,9,25));
+			Director director4 = new Director( "federico.fernandez@example.com", "Manuela", "Barrios" , "abcdefg987" ,672154784 , "Calle principe asturias 12, 28670" , "F" , LocalDate.of(2020,5,20));
+			Director director5 = new Director( "andrew.tate@example.com", "Andrew", "Tate" , "topg5577" ,621321457 , "Los tilos 12, 28571" , "M" , LocalDate.of(2021,2,15));
+			Director director6 = new Director( "tristian.blanco@example.com", "Tristan", "Blanco" , "tristanb74" ,657894521 , "Rafel Alberti, 28670" , "M" , LocalDate.of(2022,1,23));
+			Director director7 = new Director( "javier.ramirez@example.com", "Javier", "Ramirez" ,"tati1245",687541201 , "Benigno Granizo 1, 28654" , "M" , LocalDate.of(2023,1,10));
+			Director director8 = new Director( "jorge.garcia@example.com", "Jorge", "Garcia" , "richpor7" ,652147587 , "Pegasus drive 28,24714" , "M" , LocalDate.of(2021,7,9));
 			
 	    	Vector<Director> directores = new Vector<Director>();
 	    	directores.add(director);

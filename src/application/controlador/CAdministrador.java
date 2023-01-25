@@ -30,6 +30,32 @@ public class CAdministrador{
 
     @FXML
     void verDirectores(ActionEvent event) {
+    	
+    	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
+    	Stage stage = new Stage();
+
+    	try {
+ 
+			FXMLLoader loader8 = new FXMLLoader(getClass().getResource("/application/view/AdministradorVistaDirector.fxml")); //Cargo el loader
+			
+			CAdministradorVistaDirector controlador8 = new CAdministradorVistaDirector(); //creo el controlador
+		
+			loader8.setController(controlador8); //seteo el controlador con el loader que cree antes.
+			
+			Parent root8 = loader8.load(); //lo pongo como parent
+			
+			Scene scene = new Scene( root8 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+						
+			priorStage.close();	
+
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 
     }
 
@@ -65,6 +91,32 @@ public class CAdministrador{
 
     @FXML
     void verSeguratas(ActionEvent event) {
+    	
+    	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
+    	Stage stage = new Stage();
+
+    	try {
+ 
+			FXMLLoader loader8 = new FXMLLoader(getClass().getResource("/application/view/AdministradorVistaSeguridad.fxml")); //Cargo el loader
+			
+			CAdministradorVistaSeguridad controlador8 = new CAdministradorVistaSeguridad(); //creo el controlador
+		
+			loader8.setController(controlador8); //seteo el controlador con el loader que cree antes.
+			
+			Parent root8 = loader8.load(); //lo pongo como parent
+			
+			Scene scene = new Scene( root8 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+						
+			priorStage.close();	
+
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 
     }
 
