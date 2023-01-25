@@ -1,20 +1,5 @@
 [
   {
-    "emailUsuario": "doctor",
-    "nombre": "doctor",
-    "apellido": "doctor",
-    "password": "doctor",
-    "especialidad": "doctor",
-    "telefono": 1,
-    "domicilio": "doctor",
-    "sexo": "f",
-    "fechaEntrada": {
-      "year": 2023,
-      "month": 1,
-      "day": 25
-    }
-  },
-  {
     "emailUsuario": "angel.charte@example.com",
     "nombre": "Angel",
     "apellido": "Chartel",

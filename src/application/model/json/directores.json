@@ -1,19 +1,5 @@
 [
   {
-    "emailUsuario": "ricardo.basso@example.com",
-    "nombre": "Ricardo",
-    "apellido": "Basso",
-    "password": "12457841",
-    "telefono": 674851111,
-    "domicilio": "M",
-    "sexo": "Calle 50 y 12",
-    "fechaEntrada": {
-      "year": 2023,
-      "month": 1,
-      "day": 25
-    }
-  },
-  {
     "emailUsuario": "federico.fernandez@example.com",
     "nombre": "Federico",
     "apellido": "Fernandez",

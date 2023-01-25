@@ -13,81 +13,81 @@
          <children>
             <ImageView fitHeight="76.0" fitWidth="77.0" layoutX="41.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../design/ocurex-logo.png" />
+                  <Image url="@../view/design/ocurex-logo.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane layoutY="92.0" prefHeight="741.0" prefWidth="1240.0" style="-fx-background-color: #25A390;">
          <children>
-            <JFXTextArea fx:id="jfxSexo" layoutX="550.0" layoutY="500.0" prefHeight="64.0" prefWidth="423.0" promptText="Sexo" styleClass="forgetLabel" stylesheets="@../design/application.css">
+            <JFXTextArea fx:id="jfxSexo" layoutX="550.0" layoutY="500.0" prefHeight="64.0" prefWidth="423.0" promptText="Sexo" styleClass="forgetLabel" stylesheets="@../view/design/application.css">
                <font>
                   <Font size="30.0" />
                </font>
             </JFXTextArea>
-            <JFXTextArea fx:id="jfxEmail" layoutX="550.0" layoutY="15.0" prefHeight="52.0" prefWidth="426.0" promptText="Email" styleClass="forgetLabel" stylesheets="@../design/application.css">
+            <JFXTextArea fx:id="jfxEmail" layoutX="550.0" layoutY="15.0" prefHeight="52.0" prefWidth="426.0" promptText="Email" styleClass="forgetLabel" stylesheets="@../view/design/application.css">
                <font>
                   <Font size="30.0" />
                </font>
             </JFXTextArea>
-            <JFXTextArea fx:id="jfxNombre" layoutX="550.0" layoutY="100.0" prefHeight="64.0" prefWidth="423.0" promptText="Nombre" styleClass="forgetLabel" stylesheets="@../design/application.css">
+            <JFXTextArea fx:id="jfxNombre" layoutX="550.0" layoutY="100.0" prefHeight="64.0" prefWidth="423.0" promptText="Nombre" styleClass="forgetLabel" stylesheets="@../view/design/application.css">
                <font>
                   <Font size="30.0" />
                </font>
             </JFXTextArea>
-            <JFXTextArea fx:id="jfxTelefono" layoutX="550.0" layoutY="300.0" prefHeight="52.0" prefWidth="426.0" promptText="Telefono" styleClass="forgetLabel" stylesheets="@../design/application.css">
+            <JFXTextArea fx:id="jfxTelefono" layoutX="550.0" layoutY="300.0" prefHeight="52.0" prefWidth="426.0" promptText="Telefono" styleClass="forgetLabel" stylesheets="@../view/design/application.css">
                <font>
                   <Font size="30.0" />
                </font>
             </JFXTextArea>
-            <JFXTextArea fx:id="jfxApellido" layoutX="550.0" layoutY="200.0" prefHeight="64.0" prefWidth="423.0" promptText="Apellido" styleClass="forgetLabel" stylesheets="@../design/application.css">
+            <JFXTextArea fx:id="jfxApellido" layoutX="550.0" layoutY="200.0" prefHeight="64.0" prefWidth="423.0" promptText="Apellido" styleClass="forgetLabel" stylesheets="@../view/design/application.css">
                <font>
                   <Font size="30.0" />
                </font>
             </JFXTextArea>
-            <JFXTextArea fx:id="jfxDomicilio" layoutX="550.0" layoutY="400.0" prefHeight="52.0" prefWidth="426.0" promptText="Domicilio" styleClass="forgetLabel" stylesheets="@../design/application.css">
+            <JFXTextArea fx:id="jfxDomicilio" layoutX="550.0" layoutY="400.0" prefHeight="52.0" prefWidth="426.0" promptText="Domicilio" styleClass="forgetLabel" stylesheets="@../view/design/application.css">
                <font>
                   <Font size="30.0" />
                </font>
             </JFXTextArea>
-            <JFXButton fx:id="btnContinuar" layoutX="645.0" layoutY="600.0" onAction="#continuar" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Continuar">
+            <JFXButton fx:id="btnContinuar" layoutX="645.0" layoutY="600.0" onAction="#continuar" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Continuar">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnVolverAlMenu" layoutX="437.0" layoutY="600.0" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Vovler al menu">
+            <JFXButton fx:id="btnVolverAlMenu" layoutX="437.0" layoutY="600.0" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Vovler al menu">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXButton>
             <ImageView fitHeight="76.0" fitWidth="77.0" layoutX="414.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../design/envelope.png" />
+                  <Image url="@../view/design/envelope.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="420.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../design/person@2x.png" />
+                  <Image url="@../view/design/person@2x.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="420.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../design/person@2x.png" />
+                  <Image url="@../view/design/person@2x.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="426.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../design/phone.png" />
+                  <Image url="@../view/design/phone.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="426.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../design/house.png" />
+                  <Image url="@../view/design/house.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="437.0" layoutY="506.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../design/person@2x.png" />
+                  <Image url="@../view/design/person@2x.png" />
                </image>
             </ImageView>
          </children>

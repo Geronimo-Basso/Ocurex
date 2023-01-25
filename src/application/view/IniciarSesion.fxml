@@ -31,7 +31,7 @@
                <children>
                   <ImageView fitHeight="201.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../design/ocurex-logo.png" />
+                        <Image url="@../view/design/ocurex-logo.png" />
                      </image>
                   </ImageView>
                   <Text fill="#25a390" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocurex" wrappingWidth="199.5126953125">
@@ -74,7 +74,7 @@
                               <Font size="24.0" />
                            </font>
                         </JFXTextField>
-                        <JFXButton fx:id="btnIniciarSesion" onAction="#iniciarSesion" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Iniciar Sesion" GridPane.rowIndex="2">
+                        <JFXButton fx:id="btnIniciarSesion" onAction="#iniciarSesion" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Iniciar Sesion" GridPane.rowIndex="2">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -82,7 +82,7 @@
                               <Insets bottom="100.0" left="200.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnRegistrarse" onAction="#registrarse" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../design/application.css" text="Registrarse" GridPane.rowIndex="2">
+                        <JFXButton fx:id="btnRegistrarse" onAction="#registrarse" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Registrarse" GridPane.rowIndex="2">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -92,7 +92,7 @@
                         </JFXButton>
                         <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../design/person@2x.png" />
+                              <Image url="@../view/design/person@2x.png" />
                            </image>
                            <GridPane.margin>
                               <Insets left="20.0" top="100.0" />
@@ -100,7 +100,7 @@
                         </ImageView>
                         <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../design/lock.png" />
+                              <Image url="@../view/design/lock.png" />
                            </image>
                            <GridPane.margin>
                               <Insets left="20.0" />

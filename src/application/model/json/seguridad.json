@@ -1,20 +1,5 @@
 [
   {
-    "emailUsuario": "s",
-    "nombre": "s",
-    "apellido": "s",
-    "password": "s",
-    "telefono": 1,
-    "domicilio": "s",
-    "sexo": "f",
-    "zonaControla": "s",
-    "fechaEntrada": {
-      "year": 2023,
-      "month": 1,
-      "day": 25
-    }
-  },
-  {
     "emailUsuario": "flabio.rodriguez@example.com",
     "nombre": "Flabio",
     "apellido": "Rodriguez",

@@ -26,7 +26,7 @@
                <children>
                   <ImageView fitHeight="74.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@design/ocurex-logo.png" />
+                        <Image url="@view/design/ocurex-logo.png" />
                      </image>
                      <VBox.margin>
                         <Insets left="20.0" />
