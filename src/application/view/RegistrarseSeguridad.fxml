@@ -205,7 +205,7 @@
                         </JFXTextField>
                         <Label fx:id="label" textFill="RED" GridPane.rowIndex="2">
                            <font>
-                              <Font size="22.0" />
+                              <Font size="28.0" />
                            </font>
                            <GridPane.margin>
                               <Insets left="300.0" top="200.0" />

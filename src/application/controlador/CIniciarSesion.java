@@ -75,7 +75,7 @@ public class CIniciarSesion {
 			iniciarSesionSeguridad( event );
 
 		}else {
-			label.setText("Error! NO existe ese usuario");
+			label.setText("Error! No existe ese usuario");
 		}
 		
     }

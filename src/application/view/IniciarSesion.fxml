@@ -108,10 +108,10 @@
                         </ImageView>
                         <Label fx:id="label" textFill="RED" GridPane.rowIndex="1">
                            <font>
-                              <Font size="40.0" />
+                              <Font size="28.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="300.0" top="150.0" />
+                              <Insets left="250.0" top="150.0" />
                            </GridPane.margin>
                         </Label>
                      </children>

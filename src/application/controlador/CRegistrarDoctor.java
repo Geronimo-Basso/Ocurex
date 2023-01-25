@@ -116,14 +116,22 @@ public class CRegistrarDoctor {
 	    	}
 	    	
 			Medico medico = new Medico( email , nombre , apellido , password ,especialidad , telefono , domicilio , sexo , LocalDate.now());
-			Medico medico1 = new Medico( "angel.charte@example.com" , "Angel" , "Chartel" , "ibuprofeno1" , "Medicina familiar" , 624785123 , "C/Principe Asturias 25, 28670" , "M" , LocalDate.now());
-			Medico medico2 = new Medico( "rafael.mur@example.com" , "Rafael" , "Mur" , "farmacia72" , "Traumatologia" , 658412784 , "C/Tajo 12, 28670" , "M" , LocalDate.now());
-			Medico medico3 = new Medico( "damian.olmo@example.com" , "Damian" , "Olmo" , "garganta79" , "Cirugia" , 632478652 , "C/San Francisco 22, 28670" , "M" , LocalDate.now());
+			Medico medico1 = new Medico( "angel.charte@example.com" , "Angel" , "Chartel" , "ibuprofeno1" , "Medicina familiar" , 624785123 , "C/Principe Asturias 25, 28670" , "M" , LocalDate.of(2020,9,12));
+			Medico medico2 = new Medico( "rafael.mur@example.com" , "Rafael" , "Mur" , "farmacia72" , "Traumatologia" , 658412784 , "C/Tajo 12, 28670" , "M" , LocalDate.of( 2021 , 7 , 12 ));
+			Medico medico3 = new Medico( "damian.olmo@example.com" , "Damian" , "Olmo" , "garganta79" , "Cirugia" , 632478652 , "C/San Francisco 22, 28670" , "M" , LocalDate.of( 2022 , 5 , 10));
+			Medico medico4 = new Medico( "fernando.otero@example.com" , "Fernando" , "Oter" , "ferna7415" , "Cirugia" , 632784521 , "C/ 10 y 49, 25745" , "M" , LocalDate.of( 2022 , 10 , 10 ));
+			Medico medico5 = new Medico( "iman.ghazi@example.com" , "Iman" , "Ghazi" , "workkk247" , "Medicina Familiar" , 624789142 , "C/ Los libertadores 72, 28670" , "M" , LocalDate.of( 2023 , 1 , 5 ));
+			Medico medico6 = new Medico( "susana.fernandez@example.com" , "Susana" , "Fernandez" , "su0587fe" , "Traumatologia" , 684521012 , "C/ Nandos 27, 28019" , "F" , LocalDate.of( 2022 , 12 , 12));
+
 	    	Vector<Medico> medicos = new Vector<Medico>();
 	    	medicos.add(medico);
 	    	medicos.add(medico1);
 	    	medicos.add(medico2);
 	    	medicos.add(medico3);
+	    	medicos.add(medico4);
+	    	medicos.add(medico5);
+	    	medicos.add(medico6);
+
 			
 			Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
 			String representacionBonita = prettyGson.toJson(medicos);

@@ -1,5 +1,20 @@
 [
   {
+    "emailUsuario": "s",
+    "nombre": "s",
+    "apellido": "s",
+    "password": "s",
+    "telefono": 1,
+    "domicilio": "s",
+    "sexo": "f",
+    "zonaControla": "s",
+    "fechaEntrada": {
+      "year": 2023,
+      "month": 1,
+      "day": 25
+    }
+  },
+  {
     "emailUsuario": "flabio.rodriguez@example.com",
     "nombre": "Flabio",
     "apellido": "Rodriguez",
@@ -9,9 +24,9 @@
     "sexo": "M",
     "zonaControla": "Edificio A , planta B",
     "fechaEntrada": {
-      "year": 2023,
-      "month": 1,
-      "day": 20
+      "year": 2019,
+      "month": 5,
+      "day": 17
     }
   },
   {
@@ -24,9 +39,9 @@
     "sexo": "M",
     "zonaControla": "Edificio A , comedor",
     "fechaEntrada": {
-      "year": 2023,
+      "year": 2020,
       "month": 1,
-      "day": 20
+      "day": 19
     }
   },
   {
@@ -39,9 +54,54 @@
     "sexo": "M",
     "zonaControla": "Edificio B, patio afuera",
     "fechaEntrada": {
+      "year": 2021,
+      "month": 1,
+      "day": 17
+    }
+  },
+  {
+    "emailUsuario": "fausto.rodriguez@example.com",
+    "nombre": "Fausto",
+    "apellido": "Rodriguez",
+    "password": "fausto123",
+    "telefono": 654127854,
+    "domicilio": "Avenida de los poblados 15, 28772",
+    "sexo": "M",
+    "zonaControla": "Edificio A Comedor",
+    "fechaEntrada": {
+      "year": 2022,
+      "month": 5,
+      "day": 12
+    }
+  },
+  {
+    "emailUsuario": "diego.forlan@example.com",
+    "nombre": "Diego",
+    "apellido": "Forlan",
+    "password": "diego1700",
+    "telefono": 685214578,
+    "domicilio": "Principe Asturias 77, 28670",
+    "sexo": "M",
+    "zonaControla": "Edificio A Salida",
+    "fechaEntrada": {
       "year": 2023,
       "month": 1,
-      "day": 20
+      "day": 7
+    }
+  },
+  {
+    "emailUsuario": "chris.brown@example.com",
+    "nombre": "Chris",
+    "apellido": "Brown",
+    "password": "cb13112001",
+    "telefono": 621478521,
+    "domicilio": "Tomas Giribaldi 12, 28670",
+    "sexo": "M",
+    "zonaControla": "Edificio B salida",
+    "fechaEntrada": {
+      "year": 2021,
+      "month": 8,
+      "day": 5
     }
   }
 ]

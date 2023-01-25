@@ -105,15 +105,22 @@ public class CRegistrarSeguridad {
 	    	}
 	    	
 			Seguridad seguridad = new Seguridad( email , nombre , apellido , password ,telefono , domicilio , sexo , zonaControla , LocalDate.now());
-			Seguridad seguridad1 = new Seguridad( "flabio.rodriguez@example.com" , "Flabio" , "Rodriguez" , "seguridad24" , 652789254 , "Glorieta Loreto Nicolás 6, Ceuta, 04195" , "M" ,"Edificio A , planta B" , LocalDate.now());
-			Seguridad seguridad2 = new Seguridad( "santiago.martinez@example.com" , "Santiago" , "Martinez" , "nosequeponer12" , 658587235 , "Calle Ángeles Mendizábal 7 Apt. 91, Cádiz, 24435" , "M" ,"Edificio A , comedor" , LocalDate.now());
-			Seguridad seguridad3 = new Seguridad( "nicolas.fernandez@example.com" , "Nicolas" , "Fernandez" , "segurata4life" , 651027841 , "Pasadizo de Eduardo Baños 5 Piso 3, Ourense, 30825" , "M" , "Edificio B, patio afuera" ,LocalDate.now());
+			Seguridad seguridad1 = new Seguridad( "flabio.rodriguez@example.com" , "Flabio" , "Rodriguez" , "seguridad24" , 652789254 , "Glorieta Loreto Nicolás 6, Ceuta, 04195" , "M" ,"Edificio A , planta B" , LocalDate.of( 2019 , 5 , 17 ));
+			Seguridad seguridad2 = new Seguridad( "santiago.martinez@example.com" , "Santiago" , "Martinez" , "nosequeponer12" , 658587235 , "Calle Ángeles Mendizábal 7 Apt. 91, Cádiz, 24435" , "M" ,"Edificio A , comedor" , LocalDate.of(2020 , 1 , 19 ));
+			Seguridad seguridad3 = new Seguridad( "nicolas.fernandez@example.com" , "Nicolas" , "Fernandez" , "segurata4life" , 651027841 , "Pasadizo de Eduardo Baños 5 Piso 3, Ourense, 30825" , "M" , "Edificio B, patio afuera" ,LocalDate.of( 2021 , 1 , 17 ));
+			Seguridad seguridad4 = new Seguridad( "fausto.rodriguez@example.com" , "Fausto" , "Rodriguez" , "fausto123" , 654127854 , "Avenida de los poblados 15, 28772" , "M" , "Edificio A Comedor" ,LocalDate.of( 2022 , 5 , 12 ));
+			Seguridad seguridad5 = new Seguridad( "diego.forlan@example.com" , "Diego" , "Forlan" , "diego1700" , 685214578 , "Principe Asturias 77, 28670" , "M" , "Edificio A Salida" ,LocalDate.of( 2023, 1 ,7 ));
+			Seguridad seguridad6 = new Seguridad( "chris.brown@example.com" , "Chris" , "Brown" , "cb13112001" , 621478521 , "Tomas Giribaldi 12, 28670" , "M" , "Edificio B salida" ,LocalDate.of( 2021, 8 , 5 ));
+
 	    	Vector<Seguridad> seguridades = new Vector<Seguridad>();
 	    	seguridades.add(seguridad);
 	    	seguridades.add(seguridad1);
 	    	seguridades.add(seguridad2);
 	    	seguridades.add(seguridad3);
-			
+	    	seguridades.add(seguridad4);
+	    	seguridades.add(seguridad5);
+	    	seguridades.add(seguridad6);
+	    	
 			Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
 			String representacionBonita = prettyGson.toJson(seguridad);
 			System.out.println(representacionBonita);
