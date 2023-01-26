@@ -23,7 +23,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-public class CDirectorVistaPrisionero implements Initializable {
+public class CSeguridadVistaPrisionero implements Initializable {
 
     @FXML
     private JFXButton btnVolverAlMenu;
@@ -59,34 +59,6 @@ public class CDirectorVistaPrisionero implements Initializable {
     
     ObservableList<Prisionero> list = FXCollections.observableArrayList(  listaVector );
     
-    @FXML
-    void agregarPreso(ActionEvent event) {
-    
-    	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
-		Stage stage = new Stage();
-    	try {
-   		 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/RegistrarPreso.fxml")); 
-			
-			CRegistrarPrisionero controlador2 = new CRegistrarPrisionero(); 
-			
-			loader2.setController(controlador2); 
-			
-			Parent root2 = loader2.load(); 
-			
-			Scene scene = new Scene( root2 );
-			
-			stage.setScene(scene);
-			
-			stage.show();
-			
-			priorStage.close();			
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
-    	
-    }
-    
 
     @FXML
     void volverAlMenu(ActionEvent event) {
@@ -96,9 +68,9 @@ public class CDirectorVistaPrisionero implements Initializable {
 		Stage stage = new Stage();
     	try {
    		 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Director.fxml")); 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Seguridad.fxml")); 
 			
-			CDirector controlador2 = new CDirector(); 
+			CSeguridad controlador2 = new CSeguridad(); 
 			
 			loader2.setController(controlador2); 
 			

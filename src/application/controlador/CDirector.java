@@ -140,29 +140,30 @@ public class CDirector {
 
     @FXML
     void volverAlMenu(ActionEvent event) {
+    	
     	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
-		Stage stage = new Stage();
+    	Stage stage = new Stage();
+    	
     	try {
-   		 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Director.fxml")); 
+ 
+			FXMLLoader loader7 = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
 			
-			CDirector controlador2 = new CDirector(); 
+			CIniciarSesion controlador7 = new CIniciarSesion(); //creo el controlador
+		
+			loader7.setController(controlador7); //seteo el controlador con el loader que cree antes.
 			
-			loader2.setController(controlador2); 
+			Parent root7 = loader7.load(); //lo pongo como parent
 			
-			Parent root2 = loader2.load(); 
+			Scene scene = new Scene( root7 );
 			
-			Scene scene = new Scene( root2 );
-			
-			stage.setScene(scene);
-			
-			stage.show();
+			stage.setScene( scene );
+									
+			stage.show();//muestro la el archivo.
 			
 			priorStage.close();			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-
     }
     
     @FXML
