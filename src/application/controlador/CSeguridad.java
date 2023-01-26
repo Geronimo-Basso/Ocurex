@@ -52,6 +52,30 @@ public class CSeguridad {
 
     @FXML
     void verSeguratas(ActionEvent event) {
+    	
+    	Stage priorStage = (Stage)btnVerInformacionSeguridades.getScene().getWindow();
+		Stage stage = new Stage();
+    	try {
+   		 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/SeguridadVistaSeguridad.fxml")); 
+			
+			CSeguridadVistaSeguridad controlador2 = new CSeguridadVistaSeguridad(); 
+			
+			loader2.setController(controlador2); 
+			
+			Parent root2 = loader2.load(); 
+			
+			Scene scene = new Scene( root2 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+			
+			priorStage.close();			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
 
     }
 
