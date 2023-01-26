@@ -1,6 +1,7 @@
 package application;
 	
 import application.controlador.CIniciarSesion;
+import application.controlador.CRegistrarPrisionero;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -21,7 +22,7 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
 			
 			CIniciarSesion controlador = new CIniciarSesion(); //creo el controlador
-			
+		
 			loader.setController(controlador); //seteo el controlador con el loader que cree antes.
 			
 			Parent root = loader.load(); //lo pongo como parent

@@ -8,6 +8,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import application.model.Director;
 import application.model.Medico;
+import application.model.Prisionero;
 import application.model.Seguridad;
 import application.model.Zona;
 
@@ -147,6 +148,47 @@ public class ControladorJson {
 			Gson gson = new Gson();
 			
 			Type tipoLista = new TypeToken<Vector<Zona>>() {
+				
+			}.getType();
+			lista = gson.fromJson(reader, tipoLista);
+			
+		} catch (IOException e) {
+			
+
+			e.printStackTrace();
+		}
+		
+		return lista;
+	}
+	
+	public static Prisionero comprobarExistentePrisionero ( String email ) {
+		Prisionero prisionero = null;
+		Vector<Prisionero> lista = recorrerPrisioneros();
+		
+		for (Prisionero d : lista) {
+			
+			if (d.getIdentificadorPreso().equals( email )) {
+				
+				prisionero = d;
+				
+			}
+			
+		}
+		
+		return prisionero;
+		
+	}
+
+	public static Vector<Prisionero> recorrerPrisioneros () {
+		
+		Vector<Prisionero> lista = new Vector<Prisionero>();
+		
+		try (Reader reader = new FileReader("src/application/model/json/presos.json")) {
+			
+
+			Gson gson = new Gson();
+			
+			Type tipoLista = new TypeToken<Vector<Prisionero>>() {
 				
 			}.getType();
 			lista = gson.fromJson(reader, tipoLista);

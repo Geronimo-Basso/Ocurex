@@ -23,6 +23,9 @@ public class CDirector {
 
     @FXML
     private JFXButton btnVerZonas;
+    
+    @FXML
+    private JFXButton btnVerPresos;
 
     @FXML
     void verDirectores(ActionEvent event) {
@@ -110,7 +113,7 @@ public class CDirector {
     @FXML
     void verZonas(ActionEvent event) {
     	
-    	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
+    	Stage priorStage = (Stage)btnVerZonas.getScene().getWindow();
 		Stage stage = new Stage();
     	try {
    		 
@@ -141,9 +144,38 @@ public class CDirector {
 		Stage stage = new Stage();
     	try {
    		 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Administrador.fxml")); 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Director.fxml")); 
 			
-			CAdministrador controlador2 = new CAdministrador(); 
+			CDirector controlador2 = new CDirector(); 
+			
+			loader2.setController(controlador2); 
+			
+			Parent root2 = loader2.load(); 
+			
+			Scene scene = new Scene( root2 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+			
+			priorStage.close();			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+
+    }
+    
+    @FXML
+    void verPresos(ActionEvent event) {
+    	
+    	Stage priorStage = (Stage)btnVerPresos.getScene().getWindow();
+		Stage stage = new Stage();
+		
+    	try {
+   		 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/DirectorVistaPresos.fxml")); 
+			
+			CDirectorVistaPrisionero controlador2 = new CDirectorVistaPrisionero(); 
 			
 			loader2.setController(controlador2); 
 			

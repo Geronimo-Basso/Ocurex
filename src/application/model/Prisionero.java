@@ -7,23 +7,23 @@ public class Prisionero{
 	private String identificadorPreso;
 	private String nombre;
 	private String apellido;
-	private char sexo;
+	private String sexo;
 	private LocalDate fechaNacimiento;
 	private int edad;
+	private String delito;
+	private LocalDate fechaSalida;
 	
-	public Prisionero(String identificadorPreso, String nombre, String apellido, char sexo, LocalDate fechaNacimiento,int edad) {
+	public Prisionero(String identificadorPreso, String nombre, String apellido, String sexo, LocalDate fechaNacimiento,int edad, String delito, LocalDate fechaSalida) {
 		this.identificadorPreso = identificadorPreso;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.sexo = sexo;
 		this.fechaNacimiento = fechaNacimiento;
 		this.edad = edad;
+		this.delito = delito;
+		this.fechaSalida = fechaSalida;
 	}
-	
-	public Prisionero() {
-		
-	}
-	
+
 	public String getIdentificadorPreso() {
 		return identificadorPreso;
 	}
@@ -48,11 +48,11 @@ public class Prisionero{
 		this.apellido = apellido;
 	}
 
-	public char getSexo() {
+	public String getSexo() {
 		return sexo;
 	}
 
-	public void setSexo(char sexo) {
+	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
 
@@ -71,4 +71,23 @@ public class Prisionero{
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
+
+	public String getDelito() {
+		return delito;
+	}
+
+	public void setDelito(String delito) {
+		this.delito = delito;
+	}
+
+	public LocalDate getFechaSalida() {
+		return fechaSalida;
+	}
+
+	public void setFechaSalida(LocalDate fechaSalida) {
+		this.fechaSalida = fechaSalida;
+	}
+
+	
+	
 }
