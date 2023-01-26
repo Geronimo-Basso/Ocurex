@@ -12,6 +12,7 @@ import application.model.Administrador;
 import application.model.Director;
 import application.model.Medico;
 import application.model.Seguridad;
+import application.model.Zona;
 
 
 public class ControladorJson {
@@ -98,32 +99,6 @@ public class ControladorJson {
 		return lista;
 	}
 	
-//	public static void recorrerMedicosUnoAUno () {
-//		
-//		Vector<Medico> lista = new Vector<Medico>();
-//		
-//		try (Reader reader = new FileReader("src/application/model/json/medicos.json")) {
-//			
-//
-//			Gson gson = new Gson();
-//			
-//			Type tipoLista = new TypeToken<Vector<Medico>>() {
-//				
-//			}.getType();
-//			lista = gson.fromJson(reader, tipoLista);
-//			
-//			for(int i = 0 ; i < lista.size() ; i++){
-//				CAdministradorVistaMedico.setMedicoAAgregar(lista.elementAt(i));
-//			}
-//			
-//		} catch (IOException e) {
-//			
-//
-//			e.printStackTrace();
-//		}
-//		
-//	}
-	
 	public static Seguridad comprobarExistenteSeguridad ( String email , String password ) {
 		Seguridad seguridad = null;
 		Vector<Seguridad> lista = recorrerSeguridades();
@@ -204,5 +179,30 @@ public class ControladorJson {
 		
 		return lista;
 	}
+	
+	
+	public static Vector<Zona> recorrerZonas () {
+		
+		Vector<Zona> lista = new Vector<Zona>();
+		
+		try (Reader reader = new FileReader("src/application/model/json/zonas.json")) {
+			
+
+			Gson gson = new Gson();
+			
+			Type tipoLista = new TypeToken<Vector<Zona>>() {
+				
+			}.getType();
+			lista = gson.fromJson(reader, tipoLista);
+			
+		} catch (IOException e) {
+			
+
+			e.printStackTrace();
+		}
+		
+		return lista;
+	}
+	
 	
 }

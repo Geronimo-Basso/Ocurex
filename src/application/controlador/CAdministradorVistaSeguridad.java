@@ -103,7 +103,6 @@ public class CAdministradorVistaSeguridad implements Initializable {
 		columaFechaEntrada.setCellValueFactory(new PropertyValueFactory<Seguridad, LocalDate> ("fechaEntrada") );
 		columaZonaControla.setCellValueFactory(new PropertyValueFactory<Seguridad, String> ("zonaControla") );
 
-
 		table.setItems(list);			
 
 	}

@@ -27,7 +27,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-public class CAdministradorVistaDirector implements Initializable {
+public class CDirectorVistaDirector implements Initializable {
 
     @FXML
     private JFXButton btnVolverAlMenu;
@@ -72,9 +72,9 @@ public class CAdministradorVistaDirector implements Initializable {
 		Stage stage = new Stage();
     	try {
    		 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Administrador.fxml")); 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Director.fxml")); 
 			
-			CAdministrador controlador2 = new CAdministrador(); 
+			CDirector controlador2 = new CDirector(); 
 			
 			loader2.setController(controlador2); 
 			
@@ -108,43 +108,7 @@ public class CAdministradorVistaDirector implements Initializable {
 	    ObservableList<Director> list = FXCollections.observableArrayList(  listaVector );
 
 		table.setItems(list);			
-		
-//		FilteredList<Director> filteredData = new FilteredList<Director>(list, b -> true);
-//			
-//			filterField.textProperty().addListener((observable, oldValue, newValue) -> {
-//			filteredData.setPredicate(director -> {
-//					// If filter text is empty, display all persons.
-//									
-//					if (newValue == null || newValue.isEmpty()) {
-//						return true;
-//					}
-//					
-//					// Compare first name and last name of every person with filter text.
-//					String lowerCaseFilter = newValue.toLowerCase();
-//					
-//					if (director.getNombre().toLowerCase().indexOf(lowerCaseFilter) != -1 ) {
-//						return true; // Filter matches first name.
-//					} else if (director.getEmailUsuario().toLowerCase().indexOf(lowerCaseFilter) != -1) {
-//						return true; // Filter matches last name.
-//					}
-//					else if (director.getApellido().toLowerCase().indexOf(lowerCaseFilter) != -1)
-//					     return true;
-//					
-//					     else  
-//					    	 return false; // Does not match.
-//				});
-//			});
-//			
-//			// 3. Wrap the FilteredList in a SortedList. 
-//			SortedList<Director> sortedData = new SortedList<>(filteredData);
-//			
-//			// 4. Bind the SortedList comparator to the TableView comparator.
-//			// 	  Otherwise, sorting the TableView would have no effect.
-//			sortedData.comparatorProperty().bind(table.comparatorProperty());
-//			
-//			// 5. Add sorted (and filtered) data to the table.
-//			table.setItems(sortedData);
-
+	
 
 	}
 	

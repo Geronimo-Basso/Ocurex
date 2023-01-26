@@ -1,0 +1,18 @@
+[
+  {
+    "nombre": "Comedor",
+    "conteo": 10
+  },
+  {
+    "emailUsuario": "Patio exterior",
+    "password": 12
+  },
+  {
+    "emailUsuario": "Gimnasio",
+    "password": 15
+  },
+  {
+    "emailUsuario": "Calderas",
+    "password": 5
+  }
+]
