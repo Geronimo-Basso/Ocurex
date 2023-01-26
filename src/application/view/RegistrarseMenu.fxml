@@ -56,7 +56,7 @@
                               <Insets left="400.0" top="100.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnDoctor" onAction="#registrarDoctor" prefHeight="117.0" prefWidth="261.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Doctor" GridPane.rowIndex="1">
+                        <JFXButton fx:id="btnDoctor" onAction="#registrarDoctor" prefHeight="117.0" prefWidth="261.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Medico" GridPane.rowIndex="1">
                            <font>
                               <Font size="20.0" />
                            </font>
