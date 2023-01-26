@@ -84,6 +84,11 @@
                               <Font size="20.0" />
                            </font>
                         </JFXButton>
+                        <JFXButton fx:id="btnVerPresos" onAction="#verPresos" prefHeight="99.0" prefWidth="190.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver Presos" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
                      </children>
                   </GridPane>
                </center>

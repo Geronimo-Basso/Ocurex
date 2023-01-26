@@ -11,7 +11,6 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-import application.model.Administrador;
 import application.model.Director;
 import application.model.Medico;
 import application.model.Seguridad;
@@ -35,7 +34,6 @@ public class CIniciarSesion {
     
 	private static Director director;
 	private static Medico medico;
-	private static Administrador administrador;
 	private static Seguridad seguridad;
 
     @FXML
@@ -47,8 +45,6 @@ public class CIniciarSesion {
     	Medico medicoComprobar = ControladorJson.comprobarExistenteMedico(usuario.getText() , password.getText() );
     	medico = medicoComprobar;
     	
-    	Administrador administradorComprobar = ControladorJson.comprobarExistenteAdministrador(usuario.getText() , password.getText() );
-    	administrador = administradorComprobar;
     	
     	Seguridad seguridadComprobar = ControladorJson.comprobarExistenteSeguridad(usuario.getText() , password.getText());
     	seguridad = seguridadComprobar;
@@ -65,11 +61,6 @@ public class CIniciarSesion {
 			
 			iniciarSesionMedico( event );		
 			
-		}else if( ! ( administradorComprobar == null ) ) {
-			
-			iniciarSesionAdiministrador( event );
-
-
 		}else if( ! ( seguridadComprobar == null ) ) {
 			
 			iniciarSesionSeguridad( event );
@@ -188,34 +179,6 @@ public class CIniciarSesion {
 		}
     }
     
-    
-    @FXML
-    void iniciarSesionAdiministrador(ActionEvent event) {
-    	Stage priorStage = (Stage)btnRegistrarse.getScene().getWindow();
-		Stage stage = new Stage();
-    	try {
-   		 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Administrador.fxml")); 
-			
-			CAdministrador controlador2 = new CAdministrador(); 
-			
-			loader2.setController(controlador2); 
-			
-			Parent root2 = loader2.load(); 
-			
-			Scene scene = new Scene( root2 );
-			
-			stage.setScene(scene);
-			
-			stage.show();
-			
-			priorStage.close();			
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
-    }
-    
-    
 	public static Director getDirector() {
 		return director;
 	}
@@ -223,11 +186,6 @@ public class CIniciarSesion {
 
 	public static Medico getMedico() {
 		return medico;
-	}
-
-
-	public static Administrador getAdministrador() {
-		return administrador;
 	}
 
 

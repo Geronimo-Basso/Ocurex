@@ -23,7 +23,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-public class CAdministradorVistaSeguridad implements Initializable {
+public class CDirectorVistaSeguridad implements Initializable {
 
     @FXML
     private JFXButton btnVolverAlMenu;
@@ -70,9 +70,9 @@ public class CAdministradorVistaSeguridad implements Initializable {
 		Stage stage = new Stage();
     	try {
    		 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Administrador.fxml")); 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Director.fxml")); 
 			
-			CAdministrador controlador2 = new CAdministrador(); 
+			CDirector controlador2 = new CDirector(); 
 			
 			loader2.setController(controlador2); 
 			
@@ -112,7 +112,7 @@ public class CAdministradorVistaSeguridad implements Initializable {
 	}
 
 	public static void setSeguridadAAgregar(Seguridad SeguridadAAgregar) {
-		CAdministradorVistaSeguridad.SeguridadAAgregar = SeguridadAAgregar;
+		CDirectorVistaSeguridad.SeguridadAAgregar = SeguridadAAgregar;
 	}
 	
 	

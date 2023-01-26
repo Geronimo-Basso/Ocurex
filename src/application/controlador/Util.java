@@ -1,14 +1,10 @@
 package application.controlador;
-
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
-import application.model.Administrador;
 import application.model.Director;
 import application.model.Medico;
 import application.model.Seguridad;
@@ -95,26 +91,7 @@ public class Util{
     	return seguridad;
     	
     }
-    
-    public static Administrador jsonAAdministrador (String sJson) {
-    	
-    	Gson gson = new Gson();
-    	
-    	Administrador administrador = new Administrador();
-    	
-    	try (Reader reader = new FileReader (sJson)){
-    		
-    		administrador = gson.fromJson(reader, Administrador.class);
-
-    	} catch (IOException e) {
-    		
-    	e.printStackTrace();
-    	
-    	}
-    	
-    	return administrador;
-    	
-    }
+  
     
     public static boolean isEmail( String email ) {
         String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";

@@ -68,7 +68,7 @@ public class CAdministrador{
  
 			FXMLLoader loader8 = new FXMLLoader(getClass().getResource("/application/view/AdministradorVistaMedico.fxml")); //Cargo el loader
 			
-			CAdministradorVistaMedico controlador8 = new CAdministradorVistaMedico(); //creo el controlador
+			CDirectorVistaMedico controlador8 = new CDirectorVistaMedico(); //creo el controlador
 		
 			loader8.setController(controlador8); //seteo el controlador con el loader que cree antes.
 			
@@ -99,7 +99,7 @@ public class CAdministrador{
  
 			FXMLLoader loader8 = new FXMLLoader(getClass().getResource("/application/view/AdministradorVistaSeguridad.fxml")); //Cargo el loader
 			
-			CAdministradorVistaSeguridad controlador8 = new CAdministradorVistaSeguridad(); //creo el controlador
+			CDirectorVistaSeguridad controlador8 = new CDirectorVistaSeguridad(); //creo el controlador
 		
 			loader8.setController(controlador8); //seteo el controlador con el loader que cree antes.
 			

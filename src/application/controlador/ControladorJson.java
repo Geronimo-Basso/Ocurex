@@ -4,11 +4,8 @@ import java.io.IOException;
 import java.io.Reader;
 import java.lang.reflect.Type;
 import java.util.Vector;
-
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-
-import application.model.Administrador;
 import application.model.Director;
 import application.model.Medico;
 import application.model.Seguridad;
@@ -139,47 +136,6 @@ public class ControladorJson {
 		
 		return lista;
 	}
-	
-	public static Administrador comprobarExistenteAdministrador ( String email , String password ) {
-		Administrador administrador = null;
-		Vector<Administrador> lista = recorrerAdministradores();
-		
-		for (Administrador d : lista) {
-			
-			if (d.getEmailUsuario().equals( email ) && d.getPassword().equals( password )) {
-				
-				administrador = d;
-				
-			}
-			
-		}
-		
-		return administrador;
-		
-	}
-
-	public static Vector<Administrador> recorrerAdministradores () {
-		
-		Vector<Administrador> lista = new Vector<Administrador>();
-		
-		try (Reader reader = new FileReader("src/application/model/json/administradores.json")) {
-			
-
-			Gson gson = new Gson();
-			
-			Type tipoLista = new TypeToken<Vector<Administrador>>() {
-				
-			}.getType();
-			lista = gson.fromJson(reader, tipoLista);
-			
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		}
-		
-		return lista;
-	}
-	
 	
 	public static Vector<Zona> recorrerZonas () {
 		

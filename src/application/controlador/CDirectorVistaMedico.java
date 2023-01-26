@@ -23,7 +23,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-public class CAdministradorVistaMedico implements Initializable {
+public class CDirectorVistaMedico implements Initializable {
 
     @FXML
     private JFXButton btnVolverAlMenu;
@@ -61,9 +61,6 @@ public class CAdministradorVistaMedico implements Initializable {
     
     ObservableList<Medico> list = FXCollections.observableArrayList(  listaVector );
 
-//    		ControladorJson.recorrerMedicos().elementAt(0),
-//    		ControladorJson.recorrerMedicos().elementAt(1),
-//    		ControladorJson.recorrerMedicos().elementAt(2)
     @FXML
     void volverAlMenu(ActionEvent event) {
 
@@ -72,9 +69,9 @@ public class CAdministradorVistaMedico implements Initializable {
 		Stage stage = new Stage();
     	try {
    		 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Administrador.fxml")); 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Director.fxml")); 
 			
-			CAdministrador controlador2 = new CAdministrador(); 
+			CDirector controlador2 = new CDirector(); 
 			
 			loader2.setController(controlador2); 
 			
@@ -116,7 +113,7 @@ public class CAdministradorVistaMedico implements Initializable {
 	}
 
 	public static void setMedicoAAgregar(Medico medicoAAgregar) {
-		CAdministradorVistaMedico.medicoAAgregar = medicoAAgregar;
+		CDirectorVistaMedico.medicoAAgregar = medicoAAgregar;
 	}
 	
 	

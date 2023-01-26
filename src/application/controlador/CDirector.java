@@ -27,7 +27,7 @@ public class CDirector {
     @FXML
     void verDirectores(ActionEvent event) {
     	
-    	Stage priorStage = (Stage)btnVolverAlMenu.getScene().getWindow();
+    	Stage priorStage = (Stage)btnVerInformacionDirectores.getScene().getWindow();
 		Stage stage = new Stage();
     	try {
    		 
@@ -54,11 +54,56 @@ public class CDirector {
 
     @FXML
     void verMedicos(ActionEvent event) {
+    	Stage priorStage = (Stage)btnVerInformacionMedicos.getScene().getWindow();
+		Stage stage = new Stage();
+    	try {
+   		 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/DirectorVistaMedico.fxml")); 
+			
+			CDirectorVistaMedico controlador2 = new CDirectorVistaMedico(); 
+			
+			loader2.setController(controlador2); 
+			
+			Parent root2 = loader2.load(); 
+			
+			Scene scene = new Scene( root2 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+			
+			priorStage.close();			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 
     }
 
     @FXML
     void verSeguratas(ActionEvent event) {
+    	Stage priorStage = (Stage)btnVerInformacionSeguridades.getScene().getWindow();
+		Stage stage = new Stage();
+    	try {
+   		 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/DirectorVistaSeguridad.fxml")); 
+			
+			CDirectorVistaSeguridad controlador2 = new CDirectorVistaSeguridad(); 
+			
+			loader2.setController(controlador2); 
+			
+			Parent root2 = loader2.load(); 
+			
+			Scene scene = new Scene( root2 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+			
+			priorStage.close();			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
 
     }
 
