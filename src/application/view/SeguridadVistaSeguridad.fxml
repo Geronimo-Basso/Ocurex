@@ -13,6 +13,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="824.0" prefWidth="1040.0" style="-fx-background-color: #25A390;" stylesheets="@../view/design/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -33,6 +34,14 @@
                      </image>
                      <HBox.margin>
                         <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="83.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@design/seguridadverde.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="850.0" />
                      </HBox.margin>
                   </ImageView>
                </children>
@@ -75,6 +84,14 @@
                   </GridPane>
                </center>
             </BorderPane>
+            <Text fill="#25a390" strokeType="OUTSIDE" strokeWidth="0.0" text="Seguridad" wrappingWidth="119.5126953125">
+               <font>
+                  <Font name="Apple Braille Outline 6 Dot" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="825.0" />
+               </GridPane.margin>
+            </Text>
          </children>
       </GridPane>
    </children>
