@@ -175,7 +175,7 @@ public class CRegistrarDoctor {
     		
     	}catch(Exception e) {
     		
-    		label.setText( "ERROR ! ALGUNO DE LOS DATOS ESTA MAL INGRESADO" );
+    		label.setText( "ERROR! Datos INCORRECTOS" );
     		
     	}
 

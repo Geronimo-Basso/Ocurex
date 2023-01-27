@@ -4,20 +4,15 @@ public class Celda {
 	
 	private int numeroCelda;
 	private int piso;
-	private boolean esCompartida;
 	private int cantidadVentanas;
 	private int metrosCuadrados;
 	
-	public Celda(int numeroCelda, int piso, boolean esCompartida, int cantidadVentanas, int metrosCuadrados) {
+	public Celda(int numeroCelda, int piso, int cantidadVentanas, int metrosCuadrados ) {
 		super();
 		this.numeroCelda = numeroCelda;
 		this.piso = piso;
-		this.esCompartida = esCompartida;
 		this.cantidadVentanas = cantidadVentanas;
 		this.metrosCuadrados = metrosCuadrados;
-	}
-	
-	public Celda() {
 	}
 
 	public int getNumeroCelda() {
@@ -36,14 +31,6 @@ public class Celda {
 		this.piso = piso;
 	}
 
-	public boolean isEsCompartida() {
-		return esCompartida;
-	}
-
-	public void setEsCompartida(boolean esCompartida) {
-		this.esCompartida = esCompartida;
-	}
-
 	public int getCantidadVentanas() {
 		return cantidadVentanas;
 	}
@@ -59,4 +46,6 @@ public class Celda {
 	public void setMetrosCuadrados(int metrosCuadrados) {
 		this.metrosCuadrados = metrosCuadrados;
 	}
+
+	
 }

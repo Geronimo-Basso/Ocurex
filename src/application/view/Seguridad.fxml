@@ -64,12 +64,12 @@
                               <Insets left="850.0" top="150.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionSeguridades" onAction="#verSeguratas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Equipo Seguridad" GridPane.rowIndex="2">
+                        <JFXButton fx:id="btnVerInformacionSeguridades" onAction="#verSeguratas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Equipo Seguridad" GridPane.rowIndex="1">
                            <font>
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="400.0" />
+                              <Insets left="400.0" top="150.0" />
                            </GridPane.margin>
                         </JFXButton>
                         <JFXButton fx:id="btnVerZonas" onAction="#verZonas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Zonas Controladas">
@@ -77,7 +77,7 @@
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="400.0" />
+                              <Insets bottom="50.0" left="400.0" top="50.0" />
                            </GridPane.margin>
                         </JFXButton>
                         <JFXButton fx:id="btnVerPresos" onAction="#verPresos" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Presos" GridPane.rowIndex="1">
@@ -85,7 +85,15 @@
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="400.0" />
+                              <Insets bottom="150.0" left="400.0" />
+                           </GridPane.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnVerCeldas" onAction="#verCeldas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Celdas" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="50.0" left="400.0" />
                            </GridPane.margin>
                         </JFXButton>
                      </children>

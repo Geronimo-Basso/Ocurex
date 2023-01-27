@@ -7,6 +7,7 @@ import java.util.Vector;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import application.model.Celda;
 import application.model.ConsultaMedica;
 import application.model.Director;
 import application.model.Medico;
@@ -264,5 +265,27 @@ public class ControladorJson {
 	}
 	
 	
+	public static Vector<Celda> recorrerConsultasCelda() {
+		
+		Vector<Celda> lista = new Vector<Celda>();
+		
+		try (Reader reader = new FileReader("src/application/model/json/celdas.json")) {
+			
+
+			Gson gson = new Gson();
+			
+			Type tipoLista = new TypeToken<Vector<Celda>>() {
+				
+			}.getType();
+			lista = gson.fromJson(reader, tipoLista);
+			
+		} catch (IOException e) {
+			
+
+			e.printStackTrace();
+		}
+		
+		return lista;
+	}
 	
 }

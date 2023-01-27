@@ -3,48 +3,48 @@
     "numeroCelda": 1,
     "piso": 0,
     "cantidadVentanas": 1,
-    "metrosCuadrados": 20
+    "metrosCuadrados": 12 
   },
   {
     "numeroCelda": 2,
     "piso": 0,
     "cantidadVentanas": 1,
-    "metrosCuadrados": 20
+    "metrosCuadrados": 16
   },
   {
     "numeroCelda": 3,
     "piso": 0,
     "cantidadVentanas": 1,
-    "metrosCuadrados": 20
+    "metrosCuadrados": 22
   },
   {
     "numeroCelda": 4,
     "piso": 0,
     "cantidadVentanas": 1,
-    "metrosCuadrados": 20
+    "metrosCuadrados": 17
   },
   {
     "numeroCelda": 5,
     "piso": 0,
-    "cantidadVentanas": 1,
+    "cantidadVentanas": 2,
     "metrosCuadrados": 20
   },
   {
     "numeroCelda": 6,
     "piso": 0,
     "cantidadVentanas": 1,
-    "metrosCuadrados": 20
+    "metrosCuadrados": 12
   },
   {
     "numeroCelda": 7,
     "piso": 0,
-    "cantidadVentanas": 1,
-    "metrosCuadrados": 20
+    "cantidadVentanas": 2,
+    "metrosCuadrados": 15
   },
   {
     "numeroCelda": 8,
     "piso": 0,
-    "cantidadVentanas": 1,
+    "cantidadVentanas": 0,
     "metrosCuadrados": 20
   },
   {
@@ -55,67 +55,67 @@
   },
   {
     "numeroCelda": 10,
-    "piso": 0,
+    "piso": 1,
     "cantidadVentanas": 1,
     "metrosCuadrados": 20
   },
   {
     "numeroCelda": 11,
-    "piso": 0,
-    "cantidadVentanas": 1,
-    "metrosCuadrados": 20
+    "piso": 1,
+    "cantidadVentanas": 2,
+    "metrosCuadrados": 17
   },
   {
     "numeroCelda": 12,
-    "piso": 0,
+    "piso": 1,
     "cantidadVentanas": 1,
     "metrosCuadrados": 20
   },
   {
     "numeroCelda": 13,
-    "piso": 0,
+    "piso": 1,
     "cantidadVentanas": 1,
     "metrosCuadrados": 20
   },
   {
     "numeroCelda": 14,
-    "piso": 0,
+    "piso": 1,
     "cantidadVentanas": 1,
     "metrosCuadrados": 20
   },
   {
     "numeroCelda": 15,
-    "piso": 0,
+    "piso": 1,
     "cantidadVentanas": 1,
     "metrosCuadrados": 20
   },
   {
     "numeroCelda": 16,
-    "piso": 0,
+    "piso": 1,
     "cantidadVentanas": 1,
     "metrosCuadrados": 20
   },
   {
     "numeroCelda": 17,
-    "piso": 0,
+    "piso": 1,
     "cantidadVentanas": 1,
     "metrosCuadrados": 20
   },
   {
     "numeroCelda": 18,
-    "piso": 0,
+    "piso": 1,
     "cantidadVentanas": 1,
     "metrosCuadrados": 20
   },
   {
     "numeroCelda": 19,
-    "piso": 0,
+    "piso": 1,
     "cantidadVentanas": 1,
     "metrosCuadrados": 20
   },
   {
     "numeroCelda": 20,
-    "piso": 0,
+    "piso": 1,
     "cantidadVentanas": 1,
     "metrosCuadrados": 20
   }
