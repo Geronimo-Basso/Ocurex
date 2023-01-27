@@ -64,7 +64,7 @@
                               <Insets left="850.0" top="150.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionSeguridades" onAction="#verSeguratas" prefHeight="95.0" prefWidth="191.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver seguratas" GridPane.rowIndex="2">
+                        <JFXButton fx:id="btnVerInformacionSeguridades" onAction="#verSeguratas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Equipo Seguridad" GridPane.rowIndex="2">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -72,7 +72,7 @@
                               <Insets left="400.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerZonas" onAction="#verZonas" prefHeight="99.0" prefWidth="190.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Zonas">
+                        <JFXButton fx:id="btnVerZonas" onAction="#verZonas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Zonas Controladas">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -80,7 +80,7 @@
                               <Insets left="400.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerPresos" onAction="#verPresos" prefHeight="99.0" prefWidth="190.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Presos" GridPane.rowIndex="1">
+                        <JFXButton fx:id="btnVerPresos" onAction="#verPresos" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Presos" GridPane.rowIndex="1">
                            <font>
                               <Font size="20.0" />
                            </font>

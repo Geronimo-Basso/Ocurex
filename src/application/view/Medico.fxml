@@ -64,7 +64,7 @@
                               <Insets left="850.0" top="150.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerHistoriasMedicas" onAction="#verHistorias" prefHeight="99.0" prefWidth="190.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Historias Medicas">
+                        <JFXButton fx:id="btnVerHistoriasMedicas" onAction="#verHistorias" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Historias Medicas">
                            <font>
                               <Font size="17.0" />
                            </font>
@@ -72,7 +72,7 @@
                               <Insets left="400.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerMedicos" onAction="#verMedicos" prefHeight="99.0" prefWidth="190.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Medicos" GridPane.rowIndex="1">
+                        <JFXButton fx:id="btnVerMedicos" onAction="#verMedicos" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Equipo Medico" GridPane.rowIndex="1">
                            <font>
                               <Font size="20.0" />
                            </font>

@@ -63,7 +63,7 @@
                               <Insets left="850.0" top="350.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionMedicos" onAction="#verMedicos" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver medicos">
+                        <JFXButton fx:id="btnVerInformacionMedicos" onAction="#verMedicos" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver Equipo Medico">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -71,7 +71,7 @@
                               <Insets left="400.0" top="150.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionSeguridades" onAction="#verSeguratas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver seguratas">
+                        <JFXButton fx:id="btnVerInformacionSeguridades" onAction="#verSeguratas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver Equipo Seguridad">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -79,7 +79,7 @@
                               <Insets bottom="150.0" left="400.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionDirectores" onAction="#verDirectores" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver Directores" GridPane.rowIndex="1">
+                        <JFXButton fx:id="btnVerInformacionDirectores" onAction="#verDirectores" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver Junta Directiva" GridPane.rowIndex="1">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -87,7 +87,7 @@
                               <Insets left="400.0" top="300.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerZonas" onAction="#verZonas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver Zonas" GridPane.rowIndex="1">
+                        <JFXButton fx:id="btnVerZonas" onAction="#verZonas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver Zonas Controladas" GridPane.rowIndex="1">
                            <font>
                               <Font size="20.0" />
                            </font>
