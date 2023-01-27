@@ -55,6 +55,13 @@
                            <GridPane.margin>
                               <Insets left="400.0" top="100.0" />
                            </GridPane.margin>
+                           <graphic>
+                              <ImageView fitHeight="76.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@design/usuarioverde.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </JFXButton>
                         <JFXButton fx:id="btnDoctor" onAction="#registrarDoctor" prefHeight="117.0" prefWidth="261.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Medico" GridPane.rowIndex="1">
                            <font>
@@ -63,6 +70,13 @@
                            <GridPane.margin>
                               <Insets left="400.0" />
                            </GridPane.margin>
+                           <graphic>
+                              <ImageView fitHeight="76.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@design/medicoverde.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </JFXButton>
                         <JFXButton fx:id="btnSeguridad" onAction="#registrarSeguridad" prefHeight="117.0" prefWidth="261.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Seguridad" GridPane.rowIndex="2">
                            <font>
@@ -71,6 +85,13 @@
                            <GridPane.margin>
                               <Insets bottom="100.0" left="400.0" />
                            </GridPane.margin>
+                           <graphic>
+                              <ImageView fitHeight="76.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@design/seguridadverde.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </JFXButton>
                         <JFXButton fx:id="btnVolverAlMenu" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Vovler al menu" GridPane.rowIndex="2">
                            <font>
