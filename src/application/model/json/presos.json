@@ -15,10 +15,11 @@
       "year": 2025,
       "month": 5,
       "day": 22
-    }
+    },
+    "sensorBpm": 0
   },
   {
-    "identificadorPreso": "72iL3IChkrDkIvZ",
+    "identificadorPreso": "11KBRM2yjti3ilv",
     "nombre": "Nico",
     "apellido": "Salmeron",
     "sexo": "H",
@@ -33,10 +34,11 @@
       "year": 2028,
       "month": 5,
       "day": 25
-    }
+    },
+    "sensorBpm": 0
   },
   {
-    "identificadorPreso": "VRU97gMhHWgeIff",
+    "identificadorPreso": "eykBbWotGkvOnDa",
     "nombre": "Hector",
     "apellido": "Valdes",
     "sexo": "H",
@@ -51,10 +53,11 @@
       "year": 2025,
       "month": 2,
       "day": 25
-    }
+    },
+    "sensorBpm": 0
   },
   {
-    "identificadorPreso": "fBqBmEvcI45LjRa",
+    "identificadorPreso": "KqEetsBJIzUKpRl",
     "nombre": "Seve",
     "apellido": "Goicoechea",
     "sexo": "H",
@@ -69,10 +72,11 @@
       "year": 2024,
       "month": 7,
       "day": 14
-    }
+    },
+    "sensorBpm": 0
   },
   {
-    "identificadorPreso": "vqBKQmueYoqVNGU",
+    "identificadorPreso": "ne9lOJ0A23DgVYJ",
     "nombre": "Ricardo",
     "apellido": "Enriquez",
     "sexo": "H",
@@ -87,10 +91,11 @@
       "year": 2025,
       "month": 2,
       "day": 25
-    }
+    },
+    "sensorBpm": 0
   },
   {
-    "identificadorPreso": "zyVTb3hOMmYDDQp",
+    "identificadorPreso": "K6rWLmHU0m8RLfS",
     "nombre": "Guadalupe",
     "apellido": "Garcia",
     "sexo": "F",
@@ -105,10 +110,11 @@
       "year": 2024,
       "month": 4,
       "day": 22
-    }
+    },
+    "sensorBpm": 0
   },
   {
-    "identificadorPreso": "P9qI45K7QSuhKZk",
+    "identificadorPreso": "GJg7YRo05Hhvb6O",
     "nombre": "Florencia",
     "apellido": "Palau",
     "sexo": "F",
@@ -123,10 +129,11 @@
       "year": 2028,
       "month": 11,
       "day": 25
-    }
+    },
+    "sensorBpm": 0
   },
   {
-    "identificadorPreso": "q66r8f0npQvby8T",
+    "identificadorPreso": "PGPogAyCYKVRidu",
     "nombre": "Kike",
     "apellido": "Caro",
     "sexo": "H",
@@ -141,10 +148,11 @@
       "year": 2030,
       "month": 5,
       "day": 29
-    }
+    },
+    "sensorBpm": 0
   },
   {
-    "identificadorPreso": "HVHxV8L8nZxskjh",
+    "identificadorPreso": "iW5UNEaInnpjhoF",
     "nombre": "Vidal",
     "apellido": "Bardia",
     "sexo": "H",
@@ -159,6 +167,7 @@
       "year": 2025,
       "month": 1,
       "day": 3
-    }
+    },
+    "sensorBpm": 0
   }
 ]

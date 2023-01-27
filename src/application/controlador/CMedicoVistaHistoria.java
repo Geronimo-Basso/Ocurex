@@ -42,9 +42,7 @@ public class CMedicoVistaHistoria implements Initializable {
 
     @FXML
     private TableColumn<ConsultaMedica ,String > columnaIdPreso;
-    
-    
-
+   
     @FXML
     private TableColumn<ConsultaMedica , String > columnaNombre;
 
@@ -135,18 +133,11 @@ public class CMedicoVistaHistoria implements Initializable {
 		columnaNombre.setCellValueFactory(new PropertyValueFactory<ConsultaMedica, String> ("nombrePreso") );
 		columnaApellido.setCellValueFactory(new PropertyValueFactory<ConsultaMedica, String> ("apellidoPreso") );
 		columnaEmailMedico.setCellValueFactory(new PropertyValueFactory<ConsultaMedica, String> ("idMedico") );
+
 		
-	    List<ConsultaMedica> listaVector = new ArrayList<ConsultaMedica>(ControladorJson.recorrerConsultasMedicas());
-	    System.out.println(listaVector.get(0).getIdConsulta());
-//	    System.out.println(listaVector.get(0).getDescripcion());
-//	    System.out.println(listaVector.get(0).getFechaConslta());
-//	    System.out.println(listaVector.get(0).getPrisionero());	    
+	    List<ConsultaMedica> listaVector = new ArrayList<ConsultaMedica>(ControladorJson.recorrerConsultasMedicas()); 
 	    ObservableList<ConsultaMedica> list = FXCollections.observableArrayList(  listaVector );
-
 		table.setItems(list);			
-
-		
-
 	}
 		
 }

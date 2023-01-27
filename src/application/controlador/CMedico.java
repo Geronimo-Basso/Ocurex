@@ -17,6 +17,10 @@ public class CMedico {
 
     @FXML
     private JFXButton btnVerMedicos;
+    
+    @FXML
+    private JFXButton btnVerMedidasBpm;
+   
 
     @FXML
     void verHistorias(ActionEvent event) {
@@ -72,6 +76,35 @@ public class CMedico {
 		}
 
     }
+    
+    @FXML
+    void verMedidas(ActionEvent event) {
+    	Stage priorStage = (Stage)btnVerMedidasBpm.getScene().getWindow();
+		Stage stage = new Stage();
+		
+    	try {
+   		 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/MedicoVistaBpm.fxml")); 
+			
+			CMedicoVistaBpm controlador2 = new CMedicoVistaBpm(); 
+			
+			loader2.setController(controlador2); 
+			
+			Parent root2 = loader2.load(); 
+			
+			Scene scene = new Scene( root2 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+			
+			priorStage.close();			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+
+    }
+    
 
     @FXML
     void volverAlMenu(ActionEvent event) {
