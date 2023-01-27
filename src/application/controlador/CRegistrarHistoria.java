@@ -161,7 +161,7 @@ public class CRegistrarHistoria {
 			}		
     		
     	}catch (Exception e) {
-    		label.setText( "ERROR ! ALGUNO DE LOS DATOS ESTAN MAL" );
+    		label.setText( "ERROR! Datos INCORRECTOS" );
     	}
     	
 		//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
