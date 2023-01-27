@@ -47,7 +47,7 @@ public class CRegistrarHistoria {
 
 
     @FXML
-    void volverAlMenu(ActionEvent event) {
+    void salir(ActionEvent event) {
     	// ---------------------------Forma generica de llamar a una nueva ventana desde otra, es lo mismo siempre, tengo que cambiar los nombre de los paramentos nada mas, y el path del get source.---------------------------
     	Stage priorStage = (Stage)btnSalir.getScene().getWindow();
     	Stage stage = new Stage();
