@@ -13,7 +13,37 @@ public class CMedico {
     private JFXButton btnVolverAlMenu;
 
     @FXML
+    private JFXButton btnVerHistoriasMedicas;
+
+    @FXML
     private JFXButton btnVerMedicos;
+
+    @FXML
+    void verHistorias(ActionEvent event) {
+    	Stage priorStage = (Stage)btnVerHistoriasMedicas.getScene().getWindow();
+		Stage stage = new Stage();
+		
+    	try {
+   		 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/MedicoVistaHistorias.fxml")); 
+			
+			CMedicoVistaHistoria controlador2 = new CMedicoVistaHistoria(); 
+			
+			loader2.setController(controlador2); 
+			
+			Parent root2 = loader2.load(); 
+			
+			Scene scene = new Scene( root2 );
+			
+			stage.setScene(scene);
+			
+			stage.show();
+			
+			priorStage.close();			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+    }
 
     @FXML
     void verMedicos(ActionEvent event) {

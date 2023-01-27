@@ -6,6 +6,8 @@ import java.lang.reflect.Type;
 import java.util.Vector;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
+import application.model.ConsultaMedica;
 import application.model.Director;
 import application.model.Medico;
 import application.model.Prisionero;
@@ -63,6 +65,24 @@ public class ControladorJson {
 		for (Medico d : lista) {
 			
 			if (d.getEmailUsuario().equals( email ) && d.getPassword().equals( password )) {
+				
+				medico = d;
+				
+			}
+			
+		}
+		
+		return medico;
+		
+	}
+	
+	public static Medico comprobarExistenteMedicoEmail ( String email ) {
+		Medico medico = null;
+		Vector<Medico> lista = recorrerMedicos();
+		
+		for (Medico d : lista) {
+			
+			if (d.getEmailUsuario().equals( email )) {
 				
 				medico = d;
 				
@@ -161,13 +181,13 @@ public class ControladorJson {
 		return lista;
 	}
 	
-	public static Prisionero comprobarExistentePrisionero ( String email ) {
+	public static Prisionero comprobarExistentePrisionero ( String idPrisionero ) {
 		Prisionero prisionero = null;
 		Vector<Prisionero> lista = recorrerPrisioneros();
 		
 		for (Prisionero d : lista) {
 			
-			if (d.getIdentificadorPreso().equals( email )) {
+			if (d.getIdentificadorPreso().equals( idPrisionero )) {
 				
 				prisionero = d;
 				
@@ -201,6 +221,48 @@ public class ControladorJson {
 		
 		return lista;
 	}
+	
+	public static ConsultaMedica comprobarExistenteConsultaMedica ( String id) {
+		ConsultaMedica consultamedica = null;
+		Vector<ConsultaMedica> lista = recorrerConsultasMedicas();
+		
+		for (ConsultaMedica d : lista) {
+			
+			if (d.getIdentificadorConsulta().equals( id )) {
+				
+				consultamedica = d;
+				
+			}
+			
+		}
+		
+		return consultamedica;
+		
+	}
+
+	public static Vector<ConsultaMedica> recorrerConsultasMedicas () {
+		
+		Vector<ConsultaMedica> lista = new Vector<ConsultaMedica>();
+		
+		try (Reader reader = new FileReader("src/application/model/json/historias.json")) {
+			
+
+			Gson gson = new Gson();
+			
+			Type tipoLista = new TypeToken<Vector<Medico>>() {
+				
+			}.getType();
+			lista = gson.fromJson(reader, tipoLista);
+			
+		} catch (IOException e) {
+			
+
+			e.printStackTrace();
+		}
+		
+		return lista;
+	}
+	
 	
 	
 }

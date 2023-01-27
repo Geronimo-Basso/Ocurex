@@ -92,7 +92,7 @@ public class CRegistrarPrisionero {
         	int edad = Util.parsearInt(jfxEdad.getText());
         	String delito = jfxDelito.getText();
         	LocalDate fechaSalida = jfxFechaNacimiento.getValue(); 
-        	String id = "9";
+
 
         
 	    	if (Util.stringVacio(nombre) || Util.stringVacio(apellido) ||  Util.stringVacio(sexo) || Util.stringVacio(delito) || edad == 0 || fechaNacimiento == null || fechaSalida == null){
@@ -101,17 +101,19 @@ public class CRegistrarPrisionero {
 	    	}
 			
 	    	//json related
-			Prisionero prisionero1 = new Prisionero( "1" , "Nico", "Salmeron" , "H" ,LocalDate.of(1954 , 5 , 20), 68 , "Usurpacion" , LocalDate.of(2028,5,25));
-			Prisionero prisionero2 = new Prisionero( "2" , "Hector", "Valdes" , "H" ,LocalDate.of(1932 , 7 , 7), 90 , "Daños" , LocalDate.of(2025,2,25));
-			Prisionero prisionero3 = new Prisionero( "3" , "Seve", "Goicoechea" , "H" ,LocalDate.of(1912 , 2 , 28), 105 , "Falsedades documentales" , LocalDate.of(2024,7,14));
-			Prisionero prisionero4 = new Prisionero( "4" , "Ricardo", "Enriquez" , "H" ,LocalDate.of(1917 , 7 , 7), 90 , "Daños" , LocalDate.of(2025,2,25));
-			Prisionero prisionero5 = new Prisionero( "5" , "Guadalupe", "Garcia" , "F" ,LocalDate.of(1997 , 9 , 21), 25 , "Robos" , LocalDate.of(2024,4,22));
-			Prisionero prisionero6 = new Prisionero( "6" , "Florencia", "Palau" , "F" ,LocalDate.of(1997 , 11 , 12), 90 , "Daños" , LocalDate.of(2028,11,25));
-			Prisionero prisionero7 = new Prisionero( "7" , "Kike", "Caro" , "H" ,LocalDate.of(1920 , 2 , 10), 102 , "Usurpacion" , LocalDate.of(2030,5,29));
-			Prisionero prisionero8 = new Prisionero( "8" , "Vidal", "Bardia" , "H" ,LocalDate.of(1947 , 1 , 11), 75 , "Daños a la propiedad privada" , LocalDate.of(2025,1,3));
-			Prisionero prisionero = new Prisionero( id ,nombre , apellido , sexo , fechaNacimiento , edad , delito , fechaSalida );
+			Prisionero prisionero0 = new Prisionero( "1", "Victor", "Marlor" , "H" ,LocalDate.of(2003 , 5 , 20), 68 , "Daños" , LocalDate.of(2025,5,22));
+			Prisionero prisionero1 = new Prisionero( Util.getAlphaNumericString(15) , "Nico", "Salmeron" , "H" ,LocalDate.of(1954 , 5 , 20), 68 , "Usurpacion" , LocalDate.of(2028,5,25));
+			Prisionero prisionero2 = new Prisionero( Util.getAlphaNumericString(15) , "Hector", "Valdes" , "H" ,LocalDate.of(1932 , 7 , 7), 90 , "Daños" , LocalDate.of(2025,2,25));
+			Prisionero prisionero3 = new Prisionero( Util.getAlphaNumericString(15) , "Seve", "Goicoechea" , "H" ,LocalDate.of(1912 , 2 , 28), 105 , "Falsedades documentales" , LocalDate.of(2024,7,14));
+			Prisionero prisionero4 = new Prisionero( Util.getAlphaNumericString(15) , "Ricardo", "Enriquez" , "H" ,LocalDate.of(1917 , 7 , 7), 90 , "Daños" , LocalDate.of(2025,2,25));
+			Prisionero prisionero5 = new Prisionero( Util.getAlphaNumericString(15) , "Guadalupe", "Garcia" , "F" ,LocalDate.of(1997 , 9 , 21), 25 , "Robos" , LocalDate.of(2024,4,22));
+			Prisionero prisionero6 = new Prisionero( Util.getAlphaNumericString(15) , "Florencia", "Palau" , "F" ,LocalDate.of(1997 , 11 , 12), 90 , "Daños" , LocalDate.of(2028,11,25));
+			Prisionero prisionero7 = new Prisionero( Util.getAlphaNumericString(15) , "Kike", "Caro" , "H" ,LocalDate.of(1920 , 2 , 10), 102 , "Usurpacion" , LocalDate.of(2030,5,29));
+			Prisionero prisionero8 = new Prisionero( Util.getAlphaNumericString(15) , "Vidal", "Bardia" , "H" ,LocalDate.of(1947 , 1 , 11), 75 , "Daños a la propiedad privada" , LocalDate.of(2025,1,3));
+			Prisionero prisionero = new Prisionero( Util.getAlphaNumericString(15) ,nombre , apellido , sexo , fechaNacimiento , edad , delito , fechaSalida );
 
 	    	Vector<Prisionero> prisioneros = new Vector<Prisionero>();
+	    	prisioneros.add(prisionero0);
 	    	prisioneros.add(prisionero1);
 	    	prisioneros.add(prisionero2);
 	    	prisioneros.add(prisionero3);

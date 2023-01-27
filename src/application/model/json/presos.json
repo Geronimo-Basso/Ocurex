@@ -1,6 +1,24 @@
 [
   {
     "identificadorPreso": "1",
+    "nombre": "Victor",
+    "apellido": "Marlor",
+    "sexo": "H",
+    "fechaNacimiento": {
+      "year": 2003,
+      "month": 5,
+      "day": 20
+    },
+    "edad": 68,
+    "delito": "Daños",
+    "fechaSalida": {
+      "year": 2025,
+      "month": 5,
+      "day": 22
+    }
+  },
+  {
+    "identificadorPreso": "72iL3IChkrDkIvZ",
     "nombre": "Nico",
     "apellido": "Salmeron",
     "sexo": "H",
@@ -18,7 +36,7 @@
     }
   },
   {
-    "identificadorPreso": "2",
+    "identificadorPreso": "VRU97gMhHWgeIff",
     "nombre": "Hector",
     "apellido": "Valdes",
     "sexo": "H",
@@ -36,7 +54,7 @@
     }
   },
   {
-    "identificadorPreso": "3",
+    "identificadorPreso": "fBqBmEvcI45LjRa",
     "nombre": "Seve",
     "apellido": "Goicoechea",
     "sexo": "H",
@@ -54,7 +72,7 @@
     }
   },
   {
-    "identificadorPreso": "4",
+    "identificadorPreso": "vqBKQmueYoqVNGU",
     "nombre": "Ricardo",
     "apellido": "Enriquez",
     "sexo": "H",
@@ -72,7 +90,7 @@
     }
   },
   {
-    "identificadorPreso": "5",
+    "identificadorPreso": "zyVTb3hOMmYDDQp",
     "nombre": "Guadalupe",
     "apellido": "Garcia",
     "sexo": "F",
@@ -90,7 +108,7 @@
     }
   },
   {
-    "identificadorPreso": "6",
+    "identificadorPreso": "P9qI45K7QSuhKZk",
     "nombre": "Florencia",
     "apellido": "Palau",
     "sexo": "F",
@@ -108,7 +126,7 @@
     }
   },
   {
-    "identificadorPreso": "7",
+    "identificadorPreso": "q66r8f0npQvby8T",
     "nombre": "Kike",
     "apellido": "Caro",
     "sexo": "H",
@@ -126,7 +144,7 @@
     }
   },
   {
-    "identificadorPreso": "8",
+    "identificadorPreso": "HVHxV8L8nZxskjh",
     "nombre": "Vidal",
     "apellido": "Bardia",
     "sexo": "H",

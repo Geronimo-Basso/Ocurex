@@ -12,6 +12,7 @@ public class Prisionero{
 	private int edad;
 	private String delito;
 	private LocalDate fechaSalida;
+	private ConsultaMedica consultaMedica;
 	
 	public Prisionero(String identificadorPreso, String nombre, String apellido, String sexo, LocalDate fechaNacimiento,int edad, String delito, LocalDate fechaSalida) {
 		this.identificadorPreso = identificadorPreso;
@@ -22,6 +23,7 @@ public class Prisionero{
 		this.edad = edad;
 		this.delito = delito;
 		this.fechaSalida = fechaSalida;
+		this.consultaMedica = null;
 	}
 
 	public String getIdentificadorPreso() {
@@ -88,6 +90,11 @@ public class Prisionero{
 		this.fechaSalida = fechaSalida;
 	}
 
-	
-	
+	public ConsultaMedica getConsultaMedica() {
+		return consultaMedica;
+	}
+
+	public void setConsultaMedica(ConsultaMedica consultaMedica) {
+		this.consultaMedica = consultaMedica;
+	}
 }

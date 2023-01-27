@@ -2,6 +2,8 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="824.0" prefWidth="1040.0" style="-fx-background-color: #25A390;" stylesheets="@design/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="824.0" prefWidth="1040.0" style="-fx-background-color: #25A390;" stylesheets="@../view/design/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane layoutX="-3.0" layoutY="-2.0" prefHeight="860.0" prefWidth="1240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <columnConstraints>
@@ -28,13 +30,13 @@
                <children>
                   <ImageView fitHeight="83.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@design/ocurex-logo.png" />
+                        <Image url="@../view/design/ocurex-logo.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="10.0" top="10.0" />
                      </HBox.margin>
                   </ImageView>
-                  <ImageView fitHeight="83.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="83.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@design/medicoverde.png" />
                      </image>
@@ -48,43 +50,49 @@
                <center>
                   <GridPane BorderPane.alignment="CENTER">
                      <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="0.0" prefWidth="0.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="917.0" minWidth="10.0" prefWidth="917.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="0.0" prefWidth="0.0" />
                      </columnConstraints>
                      <rowConstraints>
-                        <RowConstraints maxHeight="239.0" minHeight="10.0" prefHeight="215.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="515.0" minHeight="10.0" prefHeight="273.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="333.0" minHeight="0.0" prefHeight="231.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="74.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="555.0" minHeight="10.0" prefHeight="545.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="237.0" minHeight="0.0" prefHeight="99.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <JFXButton fx:id="btnVolverAlMenu" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Salir" GridPane.rowIndex="2">
+                        <JFXButton fx:id="btnVolverAlMenu" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Vovler al menu" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <font>
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="850.0" top="150.0" />
+                              <Insets left="750.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerHistoriasMedicas" onAction="#verHistorias" prefHeight="99.0" prefWidth="190.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Historias Medicas">
-                           <font>
-                              <Font size="17.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets left="400.0" />
-                           </GridPane.margin>
-                        </JFXButton>
-                        <JFXButton fx:id="btnVerMedicos" onAction="#verMedicos" prefHeight="99.0" prefWidth="190.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@design/application.css" text="Ver Medicos" GridPane.rowIndex="1">
+                        <JFXButton fx:id="btnAgregarHistoria" onAction="#agregarHistoria" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Agregar ficha" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <font>
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="400.0" />
+                              <Insets left="550.0" />
                            </GridPane.margin>
                         </JFXButton>
+                        <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <columns>
+                              <TableColumn fx:id="columnaIdPreso" prefWidth="103.0" text="ID Preso" />
+                              <TableColumn fx:id="columnaNombre" prefWidth="93.0" text="Nombre" />
+                              <TableColumn fx:id="columnaApellido" prefWidth="88.0" text="Apellido" />
+                              <TableColumn fx:id="columnaIdConsulta" prefWidth="115.0" text="Id Consulta" />
+                              <TableColumn fx:id="columaDescripcion" prefWidth="136.0" text="Descripcion" />
+                              <TableColumn fx:id="columnaFechaConsulta" prefWidth="129.0" text="Fecha Consulta" />
+                              <TableColumn fx:id="tableColumaSexo" prefWidth="68.0" text="Sexo" />
+                              <TableColumn fx:id="columnaEmailMedico" prefWidth="132.0" text="Email medico" />
+                           </columns>
+                        </TableView>
                      </children>
                   </GridPane>
                </center>
             </BorderPane>
-            <Text fill="#25a390" strokeType="OUTSIDE" strokeWidth="0.0" text="Medico" wrappingWidth="97.5126953125">
+            <Text fill="#25a390" strokeType="OUTSIDE" strokeWidth="0.0" text="Medico" wrappingWidth="92.5126953125">
                <font>
                   <Font name="Apple Braille Outline 6 Dot" size="24.0" />
                </font>
