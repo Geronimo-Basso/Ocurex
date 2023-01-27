@@ -59,9 +59,9 @@ public class CRegistrarPrisionero {
     	
     	try {
  
-			FXMLLoader loader7 = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
+			FXMLLoader loader7 = new FXMLLoader(getClass().getResource("/application/view/Director.fxml")); //Cargo el loader
 			
-			CIniciarSesion controlador7 = new CIniciarSesion(); //creo el controlador
+			CDirector controlador7 = new CDirector(); //creo el controlador
 		
 			loader7.setController(controlador7); //seteo el controlador con el loader que cree antes.
 			

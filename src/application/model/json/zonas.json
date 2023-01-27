@@ -4,15 +4,15 @@
     "conteo": 10
   },
   {
-    "emailUsuario": "Patio exterior",
-    "password": 12
+    "nombre": "Patio exterior",
+    "conteo": 12
   },
   {
-    "emailUsuario": "Gimnasio",
-    "password": 15
+    "nombre": "Gimnasio",
+    "conteo": 15
   },
   {
-    "emailUsuario": "Calderas",
-    "password": 5
+    "nombre": "Calderas",
+    "conteo": 5
   }
 ]

@@ -6,9 +6,9 @@ public class Celda {
 	private int piso;
 	private boolean esCompartida;
 	private int cantidadVentanas;
-	private float metrosCuadrados;
+	private int metrosCuadrados;
 	
-	public Celda(int numeroCelda, int piso, boolean esCompartida, int cantidadVentanas, float metrosCuadrados) {
+	public Celda(int numeroCelda, int piso, boolean esCompartida, int cantidadVentanas, int metrosCuadrados) {
 		super();
 		this.numeroCelda = numeroCelda;
 		this.piso = piso;
@@ -52,11 +52,11 @@ public class Celda {
 		this.cantidadVentanas = cantidadVentanas;
 	}
 
-	public float getMetrosCuadrados() {
+	public int getMetrosCuadrados() {
 		return metrosCuadrados;
 	}
 
-	public void setMetrosCuadrados(float metrosCuadrados) {
+	public void setMetrosCuadrados(int metrosCuadrados) {
 		this.metrosCuadrados = metrosCuadrados;
 	}
 }

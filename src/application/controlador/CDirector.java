@@ -117,9 +117,9 @@ public class CDirector {
 		Stage stage = new Stage();
     	try {
    		 
-			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/Zona.fxml")); 
+			FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/application/view/DirectorVistaZonas.fxml")); 
 			
-			CZona controlador2 = new CZona(); 
+			CDirectorVistaZona controlador2 = new CDirectorVistaZona(); 
 			
 			loader2.setController(controlador2); 
 			

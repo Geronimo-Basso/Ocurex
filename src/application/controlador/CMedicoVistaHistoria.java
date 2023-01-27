@@ -36,10 +36,10 @@ public class CMedicoVistaHistoria implements Initializable {
 
     @FXML
     private JFXButton btnVolverAlMenu;
-//
-//    @FXML
-//    private TableView<ConsultaMedica> table;
-//
+
+    @FXML
+    private TableView<ConsultaMedica> table;
+
 //    @FXML
 //    private TableColumn<Prisionero ,String > columnaIdPreso;
 //    
@@ -50,16 +50,16 @@ public class CMedicoVistaHistoria implements Initializable {
 //
 //    @FXML
 //    private TableColumn<Prisionero , String > columnaApellido;
-//
-//    @FXML
-//    private TableColumn<ConsultaMedica ,String> columnaIdConsulta;
-//
-//    @FXML
-//    private TableColumn<ConsultaMedica , String > columaDescripcion;
-//
-//    @FXML
-//    private TableColumn<ConsultaMedica , LocalDate> columnaFechaConsulta;
-//
+
+    @FXML
+    private TableColumn<ConsultaMedica,String> columnaIdConsulta;
+
+    @FXML
+    private TableColumn<ConsultaMedica, String > columaDescripcion;
+
+    @FXML
+    private TableColumn<ConsultaMedica, LocalDate> columnaFechaConsulta;
+
 //    @FXML
 //    private TableColumn<Prisionero , String> tableColumaSexo;
 //
@@ -68,10 +68,6 @@ public class CMedicoVistaHistoria implements Initializable {
 
     @FXML
     private JFXButton btnAgregarHistoria;
-//
-//    private List<ConsultaMedica> listaVector = new ArrayList<ConsultaMedica>(ControladorJson.recorrerConsultasMedicas());
-//    
-//    ObservableList<ConsultaMedica> list = FXCollections.observableArrayList(  listaVector );
     
     @FXML
     void agregarHistoria(ActionEvent event) {
@@ -138,15 +134,21 @@ public class CMedicoVistaHistoria implements Initializable {
 //		columnaIdPreso.setCellValueFactory(new PropertyValueFactory<Prisionero, String> ("identificadorPreso") );
 //		columnaNombre.setCellValueFactory(new PropertyValueFactory<Prisionero, String> ("nombre") );
 //		columnaApellido.setCellValueFactory(new PropertyValueFactory<Prisionero, String> ("apellido") );
-//		columnaIdConsulta.setCellValueFactory(new PropertyValueFactory<ConsultaMedica, String> ("idConsulta") );
-//		columaDescripcion.setCellValueFactory(new PropertyValueFactory<ConsultaMedica, String> ("descripcion") );
-//		columnaFechaConsulta.setCellValueFactory(new PropertyValueFactory<ConsultaMedica, LocalDate> ("fechaConsulta") );
+		columnaIdConsulta.setCellValueFactory(new PropertyValueFactory<ConsultaMedica, String> ("identificadorConsulta") );
+		columaDescripcion.setCellValueFactory(new PropertyValueFactory<ConsultaMedica, String> ("descripcion") );
+		columnaFechaConsulta.setCellValueFactory(new PropertyValueFactory<ConsultaMedica, LocalDate> ("fechaConslta") );
 //		tableColumaSexo.setCellValueFactory(new PropertyValueFactory<Prisionero, String> ("sexo") );
-//		columnaEmailMedico.setCellValueFactory(new PropertyValueFactory<Medico, String> ("emailMedico") );
-//
-//		table.setItems(list);			
-//
-//		
+//		columnaEmailMedico.setCellValueFactory(new PropertyValueFactory<Medico, String> ("emailUsuario") );
+		
+	    List<ConsultaMedica> listaVector = new ArrayList<ConsultaMedica>(ControladorJson.recorrerConsultasMedicas());
+	    System.out.println(listaVector.get(0));
+
+	    ObservableList<ConsultaMedica> list = FXCollections.observableArrayList(  listaVector );
+	    System.out.println(list.indexOf(0));
+
+		table.setItems(list);			
+
+		
 
 	}
 		

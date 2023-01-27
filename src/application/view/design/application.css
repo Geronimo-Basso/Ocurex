@@ -24,3 +24,7 @@
 	-fx-border-style: solid;
 	-fx-border-radius: 10px;
 }
+
+.my-date-picker .text-field {
+    -fx-font: 29px "System";
+}

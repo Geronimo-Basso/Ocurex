@@ -2,6 +2,8 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -39,7 +41,7 @@
                         <Image url="@design/usuarioverde.png" />
                      </image>
                      <HBox.margin>
-                        <Insets left="850.0" top="15.0" />
+                        <Insets left="850.0" top="10.0" />
                      </HBox.margin>
                   </ImageView>
                </children>
@@ -48,59 +50,36 @@
                <center>
                   <GridPane BorderPane.alignment="CENTER">
                      <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="0.0" prefWidth="72.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="917.0" minWidth="10.0" prefWidth="855.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="0.0" prefWidth="93.0" />
                      </columnConstraints>
                      <rowConstraints>
-                        <RowConstraints maxHeight="281.0" minHeight="10.0" prefHeight="281.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="515.0" minHeight="10.0" prefHeight="443.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="102.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="555.0" minHeight="10.0" prefHeight="468.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="237.0" minHeight="0.0" prefHeight="153.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <JFXButton fx:id="btnVolverAlMenu" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Salir" GridPane.rowIndex="1">
+                        <JFXButton fx:id="btnVolverAlMenu" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Vovler al menu" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <font>
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="850.0" top="350.0" />
+                              <Insets left="700.0" />
                            </GridPane.margin>
                         </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionMedicos" onAction="#verMedicos" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver medicos">
+                        <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                          <columns>
+                            <TableColumn fx:id="columnaNombre" prefWidth="431.0" text="Nombre" />
+                              <TableColumn fx:id="columnaConteo" prefWidth="430.0" text="Conteo" />
+                          </columns>
+                        </TableView>
+                        <JFXButton fx:id="btnActualizarValores" onAction="#actualizarValores" prefHeight="83.0" prefWidth="198.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Actualizar Valores" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <font>
                               <Font size="20.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets left="400.0" top="150.0" />
-                           </GridPane.margin>
-                        </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionSeguridades" onAction="#verSeguratas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver seguratas">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets bottom="150.0" left="400.0" />
-                           </GridPane.margin>
-                        </JFXButton>
-                        <JFXButton fx:id="btnVerInformacionDirectores" onAction="#verDirectores" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver Directores" GridPane.rowIndex="1">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets left="400.0" top="300.0" />
-                           </GridPane.margin>
-                        </JFXButton>
-                        <JFXButton fx:id="btnVerZonas" onAction="#verZonas" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver Zonas" GridPane.rowIndex="1">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets bottom="100.0" left="400.0" top="100.0" />
-                           </GridPane.margin>
-                        </JFXButton>
-                        <JFXButton fx:id="btnVerPresos" onAction="#verPresos" prefHeight="130.0" prefWidth="250.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Ver Presos" GridPane.rowIndex="1">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets bottom="300.0" left="400.0" />
+                              <Insets left="480.0" />
                            </GridPane.margin>
                         </JFXButton>
                      </children>
