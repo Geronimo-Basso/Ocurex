@@ -19,7 +19,7 @@
     "sensorBpm": 0
   },
   {
-    "identificadorPreso": "11KBRM2yjti3ilv",
+    "identificadorPreso": "VqK4tAEzYHtj3If",
     "nombre": "Nico",
     "apellido": "Salmeron",
     "sexo": "H",
@@ -38,7 +38,7 @@
     "sensorBpm": 0
   },
   {
-    "identificadorPreso": "eykBbWotGkvOnDa",
+    "identificadorPreso": "HzJc8bJ2v5rHGA2",
     "nombre": "Hector",
     "apellido": "Valdes",
     "sexo": "H",
@@ -57,7 +57,7 @@
     "sensorBpm": 0
   },
   {
-    "identificadorPreso": "KqEetsBJIzUKpRl",
+    "identificadorPreso": "B2oeyoyIkaWL4rW",
     "nombre": "Seve",
     "apellido": "Goicoechea",
     "sexo": "H",
@@ -76,7 +76,7 @@
     "sensorBpm": 0
   },
   {
-    "identificadorPreso": "ne9lOJ0A23DgVYJ",
+    "identificadorPreso": "SPiQZJax4k8zA3a",
     "nombre": "Ricardo",
     "apellido": "Enriquez",
     "sexo": "H",
@@ -95,7 +95,7 @@
     "sensorBpm": 0
   },
   {
-    "identificadorPreso": "K6rWLmHU0m8RLfS",
+    "identificadorPreso": "SCF6GgkHf6Nj8rF",
     "nombre": "Guadalupe",
     "apellido": "Garcia",
     "sexo": "F",
@@ -114,7 +114,7 @@
     "sensorBpm": 0
   },
   {
-    "identificadorPreso": "GJg7YRo05Hhvb6O",
+    "identificadorPreso": "eeV82KKcJH52d2b",
     "nombre": "Florencia",
     "apellido": "Palau",
     "sexo": "F",
@@ -133,7 +133,7 @@
     "sensorBpm": 0
   },
   {
-    "identificadorPreso": "PGPogAyCYKVRidu",
+    "identificadorPreso": "Ivq03rzKyiPNgrd",
     "nombre": "Kike",
     "apellido": "Caro",
     "sexo": "H",
@@ -152,7 +152,7 @@
     "sensorBpm": 0
   },
   {
-    "identificadorPreso": "iW5UNEaInnpjhoF",
+    "identificadorPreso": "OWn4qiQs85c1J72",
     "nombre": "Vidal",
     "apellido": "Bardia",
     "sexo": "H",
@@ -167,6 +167,329 @@
       "year": 2025,
       "month": 1,
       "day": 3
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "askMvXDhHoIGQEJ",
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "sexo": "M",
+    "fechaNacimiento": {
+      "year": 1985,
+      "month": 1,
+      "day": 15
+    },
+    "edad": 38,
+    "delito": "Robo",
+    "fechaSalida": {
+      "year": 2022,
+      "month": 10,
+      "day": 5
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "ahKgCOPhsYagJfO",
+    "nombre": "Maria",
+    "apellido": "Garcia",
+    "sexo": "F",
+    "fechaNacimiento": {
+      "year": 1980,
+      "month": 3,
+      "day": 25
+    },
+    "edad": 43,
+    "delito": "Asesinato",
+    "fechaSalida": {
+      "year": 2030,
+      "month": 5,
+      "day": 10
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "7DJLYcn79L37KIW",
+    "nombre": "Pedro",
+    "apellido": "Sánchez",
+    "sexo": "M",
+    "fechaNacimiento": {
+      "year": 1990,
+      "month": 7,
+      "day": 30
+    },
+    "edad": 33,
+    "delito": "Trafico de drogas",
+    "fechaSalida": {
+      "year": 2024,
+      "month": 3,
+      "day": 15
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "t7BMMF1cBFSEjEx",
+    "nombre": "Ana",
+    "apellido": "Martinez",
+    "sexo": "F",
+    "fechaNacimiento": {
+      "year": 1995,
+      "month": 12,
+      "day": 10
+    },
+    "edad": 28,
+    "delito": "Estafa",
+    "fechaSalida": {
+      "year": 2021,
+      "month": 8,
+      "day": 20
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "lhuhFt8BGrezyNI",
+    "nombre": "Carlos",
+    "apellido": "Gómez",
+    "sexo": "M",
+    "fechaNacimiento": {
+      "year": 2000,
+      "month": 4,
+      "day": 20
+    },
+    "edad": 23,
+    "delito": "Secuestro",
+    "fechaSalida": {
+      "year": 2025,
+      "month": 6,
+      "day": 5
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "8GzNPLVZDXLCRWG",
+    "nombre": "Isabel",
+    "apellido": "Rodriguez",
+    "sexo": "F",
+    "fechaNacimiento": {
+      "year": 1987,
+      "month": 8,
+      "day": 15
+    },
+    "edad": 36,
+    "delito": "Violación",
+    "fechaSalida": {
+      "year": 2027,
+      "month": 2,
+      "day": 10
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "TAzPc6s5ba5ItxV",
+    "nombre": "Juan Carlos",
+    "apellido": "Fernández",
+    "sexo": "M",
+    "fechaNacimiento": {
+      "year": 1992,
+      "month": 2,
+      "day": 28
+    },
+    "edad": 31,
+    "delito": "Terrorismo",
+    "fechaSalida": {
+      "year": 2029,
+      "month": 11,
+      "day": 15
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "sFnM9dKiXsdqzdQ",
+    "nombre": "Sofia",
+    "apellido": "Lopez",
+    "sexo": "F",
+    "fechaNacimiento": {
+      "year": 1998,
+      "month": 5,
+      "day": 10
+    },
+    "edad": 25,
+    "delito": "Fraude",
+    "fechaSalida": {
+      "year": 2022,
+      "month": 1,
+      "day": 5
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "n2utGxp1JqTi6mO",
+    "nombre": "David",
+    "apellido": "Gonzalez",
+    "sexo": "M",
+    "fechaNacimiento": {
+      "year": 1994,
+      "month": 11,
+      "day": 20
+    },
+    "edad": 29,
+    "delito": "Corrupción",
+    "fechaSalida": {
+      "year": 2024,
+      "month": 7,
+      "day": 15
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "HTEOuvqR4cGloBs",
+    "nombre": "Lucia",
+    "apellido": "Jimenez",
+    "sexo": "F",
+    "fechaNacimiento": {
+      "year": 2001,
+      "month": 6,
+      "day": 30
+    },
+    "edad": 22,
+    "delito": "Tráfico humano",
+    "fechaSalida": {
+      "year": 2026,
+      "month": 3,
+      "day": 5
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "T2Yz0AA1HTXieTg",
+    "nombre": "Jorge",
+    "apellido": "Moreno",
+    "sexo": "M",
+    "fechaNacimiento": {
+      "year": 1989,
+      "month": 9,
+      "day": 10
+    },
+    "edad": 34,
+    "delito": "Lesiones graves",
+    "fechaSalida": {
+      "year": 2023,
+      "month": 4,
+      "day": 15
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "G5xyYYulJoGYOXV",
+    "nombre": "Alejandra",
+    "apellido": "Muñoz",
+    "sexo": "F",
+    "fechaNacimiento": {
+      "year": 1996,
+      "month": 1,
+      "day": 20
+    },
+    "edad": 27,
+    "delito": "Intento de homicidio",
+    "fechaSalida": {
+      "year": 2028,
+      "month": 8,
+      "day": 10
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "jkcJzlDo7BeXHdE",
+    "nombre": "Miguel",
+    "apellido": "Romero",
+    "sexo": "M",
+    "fechaNacimiento": {
+      "year": 1991,
+      "month": 7,
+      "day": 25
+    },
+    "edad": 32,
+    "delito": "Extorsión",
+    "fechaSalida": {
+      "year": 2022,
+      "month": 12,
+      "day": 5
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "IoZ1kX48NXOe5ZJ",
+    "nombre": "Eduardo",
+    "apellido": "Navarro",
+    "sexo": "M",
+    "fechaNacimiento": {
+      "year": 1984,
+      "month": 3,
+      "day": 10
+    },
+    "edad": 39,
+    "delito": "Piratería informática",
+    "fechaSalida": {
+      "year": 2024,
+      "month": 5,
+      "day": 20
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "OhOUOWHyXc3VvtN",
+    "nombre": "Rebeca",
+    "apellido": "Torres",
+    "sexo": "F",
+    "fechaNacimiento": {
+      "year": 1999,
+      "month": 8,
+      "day": 15
+    },
+    "edad": 24,
+    "delito": "Blanqueo de capitales",
+    "fechaSalida": {
+      "year": 2026,
+      "month": 1,
+      "day": 10
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "v9ahlk27EvZiz4h",
+    "nombre": "Alberto",
+    "apellido": "Gómez",
+    "sexo": "M",
+    "fechaNacimiento": {
+      "year": 1997,
+      "month": 12,
+      "day": 30
+    },
+    "edad": 26,
+    "delito": "Drogadicción",
+    "fechaSalida": {
+      "year": 2028,
+      "month": 6,
+      "day": 15
+    },
+    "sensorBpm": 0
+  },
+  {
+    "identificadorPreso": "0LbvnvLhAzZVoEW",
+    "nombre": "Mercedes",
+    "apellido": "Pérez",
+    "sexo": "F",
+    "fechaNacimiento": {
+      "year": 1993,
+      "month": 2,
+      "day": 15
+    },
+    "edad": 30,
+    "delito": "Delitos ambientales",
+    "fechaSalida": {
+      "year": 2029,
+      "month": 9,
+      "day": 5
     },
     "sensorBpm": 0
   }

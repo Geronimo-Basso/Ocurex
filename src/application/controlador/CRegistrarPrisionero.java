@@ -110,7 +110,25 @@ public class CRegistrarPrisionero {
 			Prisionero prisionero6 = new Prisionero( Util.getAlphaNumericString(15) , "Florencia", "Palau" , "F" ,LocalDate.of(1997 , 11 , 12), 90 , "Daños" , LocalDate.of(2028,11,25));
 			Prisionero prisionero7 = new Prisionero( Util.getAlphaNumericString(15) , "Kike", "Caro" , "H" ,LocalDate.of(1920 , 2 , 10), 102 , "Usurpacion" , LocalDate.of(2030,5,29));
 			Prisionero prisionero8 = new Prisionero( Util.getAlphaNumericString(15) , "Vidal", "Bardia" , "H" ,LocalDate.of(1947 , 1 , 11), 75 , "Daños a la propiedad privada" , LocalDate.of(2025,1,3));
+			Prisionero prisionero9 = new Prisionero( Util.getAlphaNumericString(15) , "Juan", "Pérez" , "M" ,LocalDate.of(1985 , 1 , 15), 38 , "Robo" , LocalDate.of(2022,10,5));
+			Prisionero prisionero10 = new Prisionero( Util.getAlphaNumericString(15) , "Maria", "Garcia" , "F" ,LocalDate.of(1980 , 3 , 25), 43 , "Asesinato" , LocalDate.of(2030,5,10));
+			Prisionero prisionero11 = new Prisionero( Util.getAlphaNumericString(15) , "Pedro", "Sánchez" , "M" ,LocalDate.of(1990 , 7 , 30), 33 , "Trafico de drogas" , LocalDate.of(2024,3,15));
+			Prisionero prisionero12 = new Prisionero( Util.getAlphaNumericString(15) , "Ana", "Martinez" , "F" ,LocalDate.of(1995 , 12 , 10), 28 , "Estafa" , LocalDate.of(2021,8,20));
+			Prisionero prisionero13 = new Prisionero( Util.getAlphaNumericString(15) , "Carlos", "Gómez" , "M" ,LocalDate.of(2000 , 4 , 20), 23 , "Secuestro" , LocalDate.of(2025,6,5));
+			Prisionero prisionero14 = new Prisionero( Util.getAlphaNumericString(15) , "Isabel", "Rodriguez" , "F" ,LocalDate.of(1987 , 8 , 15), 36 , "Violación" , LocalDate.of(2027,2,10));
+			Prisionero prisionero15 = new Prisionero( Util.getAlphaNumericString(15) , "Juan Carlos", "Fernández" , "M" ,LocalDate.of(1992 , 2 , 28), 31 , "Terrorismo" , LocalDate.of(2029,11,15));
+			Prisionero prisionero16 = new Prisionero( Util.getAlphaNumericString(15) , "Sofia", "Lopez" , "F" ,LocalDate.of(1998 , 5 , 10), 25 , "Fraude" , LocalDate.of(2022,1,5));
+			Prisionero prisionero17 = new Prisionero( Util.getAlphaNumericString(15) , "David", "Gonzalez" , "M" ,LocalDate.of(1994 , 11 , 20), 29 , "Corrupción" , LocalDate.of(2024,7,15));
+			Prisionero prisionero18 = new Prisionero( Util.getAlphaNumericString(15) , "Lucia", "Jimenez" , "F" ,LocalDate.of(2001 , 6 , 30), 22 , "Tráfico humano" , LocalDate.of(2026,3,5));
+			Prisionero prisionero19 = new Prisionero( Util.getAlphaNumericString(15) , "Jorge", "Moreno" , "M" ,LocalDate.of(1989 , 9 , 10), 34 , "Lesiones graves" , LocalDate.of(2023,4,15));
+			Prisionero prisionero20 = new Prisionero( Util.getAlphaNumericString(15) , "Alejandra", "Muñoz" , "F" ,LocalDate.of(1996 , 1 , 20), 27 , "Intento de homicidio" , LocalDate.of(2028,8,10));
+			Prisionero prisionero21 = new Prisionero( Util.getAlphaNumericString(15) , "Miguel", "Romero" , "M" ,LocalDate.of(1991 , 7 , 25), 32 , "Extorsión" , LocalDate.of(2022,12,5));
+			Prisionero prisionero22 = new Prisionero( Util.getAlphaNumericString(15) , "Eduardo", "Navarro" , "M" ,LocalDate.of(1984 , 3 , 10), 39 , "Piratería informática" , LocalDate.of(2024,5,20));
+			Prisionero prisionero23 = new Prisionero( Util.getAlphaNumericString(15) , "Rebeca", "Torres" , "F" ,LocalDate.of(1999 , 8 , 15), 24 , "Blanqueo de capitales" , LocalDate.of(2026,1,10));
+			Prisionero prisionero24 = new Prisionero( Util.getAlphaNumericString(15) , "Alberto", "Gómez" , "M" ,LocalDate.of(1997 , 12 , 30), 26 , "Drogadicción" , LocalDate.of(2028,6,15));
+			Prisionero prisionero25 = new Prisionero( Util.getAlphaNumericString(15) , "Mercedes", "Pérez" , "F" ,LocalDate.of(1993 , 2 , 15), 30 , "Delitos ambientales" , LocalDate.of(2029,9,5));
 			Prisionero prisionero = new Prisionero( Util.getAlphaNumericString(15) ,nombre , apellido , sexo , fechaNacimiento , edad , delito , fechaSalida );
+
 
 	    	Vector<Prisionero> prisioneros = new Vector<Prisionero>();
 	    	prisioneros.add(prisionero0);
@@ -122,6 +140,23 @@ public class CRegistrarPrisionero {
 	    	prisioneros.add(prisionero6);
 	    	prisioneros.add(prisionero7);
 	    	prisioneros.add(prisionero8);
+	    	prisioneros.add(prisionero9);
+	    	prisioneros.add(prisionero10);
+	    	prisioneros.add(prisionero11);
+	    	prisioneros.add(prisionero12);
+	    	prisioneros.add(prisionero13);
+	    	prisioneros.add(prisionero14);
+	    	prisioneros.add(prisionero15);
+	    	prisioneros.add(prisionero16);
+	    	prisioneros.add(prisionero17);
+	    	prisioneros.add(prisionero18);
+	    	prisioneros.add(prisionero19);
+	    	prisioneros.add(prisionero20);
+	    	prisioneros.add(prisionero21);
+	    	prisioneros.add(prisionero22);
+	    	prisioneros.add(prisionero23);
+	    	prisioneros.add(prisionero24);
+	    	prisioneros.add(prisionero25);
 	    	prisioneros.add(prisionero);
 			
 			Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
@@ -144,9 +179,9 @@ public class CRegistrarPrisionero {
 	
 	    	try {
 	 
-				FXMLLoader loader8 = new FXMLLoader(getClass().getResource("/application/view/IniciarSesion.fxml")); //Cargo el loader
+				FXMLLoader loader8 = new FXMLLoader(getClass().getResource("/application/view/Director.fxml")); //Cargo el loader
 				
-				CIniciarSesion controlador8 = new CIniciarSesion(); //creo el controlador
+				CDirector controlador8 = new CDirector(); //creo el controlador
 			
 				loader8.setController(controlador8); //seteo el controlador con el loader que cree antes.
 				
