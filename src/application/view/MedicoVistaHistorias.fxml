@@ -84,7 +84,6 @@
                               <TableColumn fx:id="columnaIdConsulta" prefWidth="115.0" text="Id Consulta" />
                               <TableColumn fx:id="columaDescripcion" prefWidth="136.0" text="Descripcion" />
                               <TableColumn fx:id="columnaFechaConsulta" prefWidth="129.0" text="Fecha Consulta" />
-                              <TableColumn fx:id="tableColumaSexo" prefWidth="68.0" text="Sexo" />
                               <TableColumn fx:id="columnaEmailMedico" prefWidth="132.0" text="Email medico" />
                            </columns>
                         </TableView>

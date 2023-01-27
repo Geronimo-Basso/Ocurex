@@ -4,20 +4,31 @@ import java.time.LocalDate;
 
 public class ConsultaMedica {
 	
-	private String identificadorConsulta;
+	private String idConsulta;
 	private String descripcion;
 	private LocalDate fechaConslta;
-	private Prisionero prisionero;
-	private Medico medico;
-
+	private String idPreso;
+	private String nombrePreso;
+	private String apellidoPreso;
+	private String idMedico;
 	
-	public ConsultaMedica(String identificadorConsulta, String descripcion, LocalDate fechaConslta , Prisionero prisionero , Medico medico) {
-		super();
-		this.identificadorConsulta = identificadorConsulta;
+	public ConsultaMedica(String idConsulta, String descripcion, LocalDate fechaConslta, String idPreso,
+			String nombrePreso, String apellidoPreso, String idMedico) {
+		this.idConsulta = idConsulta;
 		this.descripcion = descripcion;
 		this.fechaConslta = fechaConslta;
-		this.prisionero = prisionero;
-		this.medico = medico;
+		this.idPreso = idPreso;
+		this.nombrePreso = nombrePreso;
+		this.apellidoPreso = apellidoPreso;
+		this.idMedico = idMedico;
+	}
+
+	public String getIdConsulta() {
+		return idConsulta;
+	}
+
+	public void setIdConsulta(String idConsulta) {
+		this.idConsulta = idConsulta;
 	}
 
 	public String getDescripcion() {
@@ -36,28 +47,37 @@ public class ConsultaMedica {
 		this.fechaConslta = fechaConslta;
 	}
 
-	public String getIdentificadorConsulta() {
-		return identificadorConsulta;
+	public String getIdPreso() {
+		return idPreso;
 	}
 
-	public void setIdentificadorConsulta(String identificadorConsulta) {
-		this.identificadorConsulta = identificadorConsulta;
+	public void setIdPreso(String idPreso) {
+		this.idPreso = idPreso;
 	}
 
-	public Prisionero getPrisionero() {
-		return prisionero;
+	public String getNombrePreso() {
+		return nombrePreso;
 	}
 
-	public void setPrisionero(Prisionero prisionero) {
-		this.prisionero = prisionero;
+	public void setNombrePreso(String nombrePreso) {
+		this.nombrePreso = nombrePreso;
 	}
 
-	public Medico getMedico() {
-		return medico;
+	public String getApellidoPreso() {
+		return apellidoPreso;
 	}
 
-	public void setMedico(Medico medico) {
-		this.medico = medico;
+	public void setApellidoPreso(String apellidoPreso) {
+		this.apellidoPreso = apellidoPreso;
 	}
+
+	public String getIdMedico() {
+		return idMedico;
+	}
+
+	public void setIdMedico(String idMedico) {
+		this.idMedico = idMedico;
+	}
+
 	
 }

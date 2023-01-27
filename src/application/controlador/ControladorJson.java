@@ -228,7 +228,7 @@ public class ControladorJson {
 		
 		for (ConsultaMedica d : lista) {
 			
-			if (d.getIdentificadorConsulta().equals( id )) {
+			if (d.getIdConsulta().equals( id )) {
 				
 				consultamedica = d;
 				
@@ -249,7 +249,7 @@ public class ControladorJson {
 
 			Gson gson = new Gson();
 			
-			Type tipoLista = new TypeToken<Vector<Medico>>() {
+			Type tipoLista = new TypeToken<Vector<ConsultaMedica>>() {
 				
 			}.getType();
 			lista = gson.fromJson(reader, tipoLista);

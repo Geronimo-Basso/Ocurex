@@ -1,44 +1,28 @@
 [
   {
-    "identificadorConsulta": "HqFQUygPrd",
+    "idConsulta": "mfygB9cqfl",
     "descripcion": "El paciente se encuntra en un buen estado de salud",
     "fechaConslta": {
       "year": 2023,
       "month": 1,
       "day": 1
     },
-    "prisionero": {
-      "identificadorPreso": "1",
-      "nombre": "Victor",
-      "apellido": "Marlor",
-      "sexo": "H",
-      "fechaNacimiento": {
-        "year": 2003,
-        "month": 5,
-        "day": 20
-      },
-      "edad": 68,
-      "delito": "Daños",
-      "fechaSalida": {
-        "year": 2025,
-        "month": 5,
-        "day": 22
-      }
+    "idPreso": "1",
+    "nombrePreso": "Victor",
+    "apellidoPreso": "Marlor",
+    "idMedico": "angel.charte@example.com"
+  },
+  {
+    "idConsulta": "N1gHvUL6xr1YNE8",
+    "descripcion": "prubea2",
+    "fechaConslta": {
+      "year": 2023,
+      "month": 1,
+      "day": 24
     },
-    "medico": {
-      "emailUsuario": "angel.charte@example.com",
-      "nombre": "Angel",
-      "apellido": "Chartel",
-      "password": "ibuprofeno1",
-      "especialidad": "Medicina familiar",
-      "telefono": 624785123,
-      "domicilio": "C/Principe Asturias 25, 28670",
-      "sexo": "M",
-      "fechaEntrada": {
-        "year": 2020,
-        "month": 9,
-        "day": 12
-      }
-    }
+    "idPreso": "1",
+    "nombrePreso": "Victor",
+    "apellidoPreso": "Marlor",
+    "idMedico": "medicoNuevo"
   }
 ]

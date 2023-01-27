@@ -57,7 +57,7 @@
                         <RowConstraints maxHeight="356.0" minHeight="10.0" prefHeight="249.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <JFXButton fx:id="btnVolverAlMenu" onAction="#volverAlMenu" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Vovler al menu" GridPane.rowIndex="1">
+                        <JFXButton fx:id="btnSalir" onAction="#salir" prefHeight="83.0" prefWidth="171.0" ripplerFill="BLACK" styleClass="loginBtn" stylesheets="@../view/design/application.css" text="Salir" GridPane.rowIndex="1">
                            <font>
                               <Font size="20.0" />
                            </font>
